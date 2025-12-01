@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iguro's Enterprise | Acesso Restrito</title>
+    <style>
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Black', 'Impact', sans-serif; /* Fontes pesadas e grossas */
+        }
+
+        body {
+            background-color: #000000; /* Preto Profundo */
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* EFEITO DE FUNDO (REISHI PARTICLES) */
+        .background-noise {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent 20%, #000 120%),
+                        repeating-linear-gradient(0deg, transparent, transparent 2px, #111 3px);
+            z-index: 0;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .container {
+            z-index: 10;
+            text-align: center;
+            border: 4px solid #ffffff;
+            padding: 3rem;
+            max-width: 600px;
+            width: 90%;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 10px 10px 0px #d65a18; /* Sombra sólida Laranja Bleach */
+            position: relative;
+        }
+
+        /* TÍTULO COM GLITCH */
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-shadow: 2px 2px 0px #d65a18;
+            position: relative;
+        }
+
+        /* SUBTÍTULO / STATUS */
+        .status {
+            color: #d65a18; /* Laranja Característico */
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            padding: 10px 0;
+            animation: pulse 2s infinite;
+        }
+
+        /* MENSAGEM DINÂMICA */
+        .message {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            min-height: 60px; /* Evita pulo de layout */
+            color: #ccc;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* BOTÃO "VOLTE MAIS TARDE" */
+        .btn {
+            text-decoration: none;
+            color: #000;
+            background-color: #fff;
+            padding: 15px 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: not-allowed; /* Cursor de bloqueio */
+        }
+
+        .btn:hover {
+            background-color: #d65a18;
+            color: #fff;
+            box-shadow: 0 0 15px #d65a18;
+        }
+
+        /* RODAPÉ */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: #555;
+            z-index: 10;
+            font-family: monospace;
+        }
+
+        /* ANIMAÇÕES */
+        @keyframes pulse {
+            0% { opacity: 0.8; text-shadow: 0 0 5px #d65a18; }
+            50% { opacity: 1; text-shadow: 0 0 20px #d65a18, 0 0 10px #fff; }
+            100% { opacity: 0.8; text-shadow: 0 0 5px #d65a18; }
+        }
+
+        /* SYMBOL (SIMULAÇÃO DA BADGE DE SHINIGAMI SUBSTITUTE EM CSS) */
+        .symbol {
+            width: 80px;
+            height: 80px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .symbol::before {
+            content: 'X';
+            font-size: 3rem;
+            color: #d65a18;
+        }
+
+        /* MEDIA QUERIES */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .container { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-noise"></div>
+
+    <div class="container">
+        <div class="symbol"></div>
+        
+        <h1 id="title">AVISO</h1>
+        
+        <div class="status">Reiatsu Insuficiente</div>
+        
+        <p class="message" id="typewriter"></p>
+
+        <a href="www.duqueiguro.xyz" class="btn">Retornar ao Mundo Real</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Iguro's Enterprise. All Rights Reserved.
+    </footer>
+
+    <script>
+        // CONFIGURAÇÃO DO TEXTO DA MENSAGEM
+        const textElement = document.getElementById('typewriter');
+        const textToType = "Esta área está sob reconstrução espiritual. Sua presença não foi autorizada pela Central 46. Retorne quando seu poder for maior.";
+        const speed = 50; // Velocidade da digitação em ms
+
+        let i = 0;
+
+        function typeWriter() {
+            if (i < textToType.length) {
+                textElement.innerHTML += textToType.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                // Adiciona um cursor piscando no final
+                textElement.innerHTML += '<span style="animation: blink 1s infinite">|</span>';
+            }
+        }
+
+        // INICIA O EFEITO AO CARREGAR
+        window.onload = typeWriter;
+
+        // EFEITO EXTRA DE GLITCH NO TÍTULO (Aleatório)
+        const title = document.getElementById('title');
+        const originalTitle = title.innerText;
+        const glitchChars = '!@#$%^&*<>?';
+
+        setInterval(() => {
+            if(Math.random() > 0.95) { // 5% de chance de glitch
+                let glitchText = '';
+                for(let j=0; j < originalTitle.length; j++) {
+                    glitchText += glitchChars.charAt(Math.floor(Math.random() * glitchChars.length));
+                }
+                title.innerText = glitchText;
+                title.style.color = '#d65a18';
+                
+                setTimeout(() => {
+                    title.innerText = originalTitle;
+                    title.style.color = '#fff';
+                }, 100);
+            }
+        }, 1000);
+
+        // CSS ADICIONAL PARA O CURSOR PISCANTE INJETADO VIA JS
+        const styleSheet = document.createElement("style");
+        styleSheet.innerText = `
+            @keyframes blink {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0; }
+            }
+        `;
+        document.head.appendChild(styleSheet);
+
+    </script>
+</body>
+</html>
