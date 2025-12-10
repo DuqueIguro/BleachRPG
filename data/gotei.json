@@ -1,0 +1,106 @@
+[
+  {
+    "id": "01",
+    "captain": "Genryūsai Shigekuni Yamamoto",
+    "lieutenant": "Chōjirō Sasakibe",
+    "role": "Comando e Supervisão",
+    "description": "Exerce o comando supremo e a supervisão geral de todas as outras divisões, garantindo a ordem e a hierarquia no Gotei 13.",
+    "family": null
+  },
+  {
+    "id": "02",
+    "captain": "Ueli Tristã Tennōji Shihōin",
+    "lieutenant": "Reika Taira Kisarage",
+    "role": "Operações Especiais",
+    "description": "Especializada em missões de stealth, assassinatos de alto risco e operações das Forças Especiais.",
+    "family": "Casa Shihōin"
+  },
+  {
+    "id": "03",
+    "captain": "Hebimi Avengard Iguro",
+    "lieutenant": "Sadim Kanemoto",
+    "role": "Inteligência e Toxinas",
+    "description": "Focada em inteligência e estudo geral, com uma especialização única em pesquisa e desenvolvimento de venenos e toxinas letais.",
+    "family": "Casa Iguro"
+  },
+  {
+    "id": "04",
+    "captain": "Retsu Unohana",
+    "lieutenant": "Isane Kotetsu",
+    "role": "Médica e Assistência",
+    "description": "Encarregada de todo o suporte médico, cirurgias e assistência aos feridos, além de fornecer suprimentos.",
+    "family": null
+  },
+  {
+    "id": "05",
+    "captain": "Shinji Hirako",
+    "lieutenant": "Momo Hinamori",
+    "role": "Administração e Cerimonial",
+    "description": "Responsável pela parte administrativa burocrática e pela organização de cerimônias oficiais.",
+    "family": null
+  },
+  {
+    "id": "06",
+    "captain": "Byakuya Kuchiki",
+    "lieutenant": "Renji Abarai",
+    "role": "Patrulha e Julgamento",
+    "description": "Atua na patrulha interna rigorosa e nos processos de julgamento de crimes cometidos por Ceifeiros de Almas.",
+    "family": "Casa Kuchiki"
+  },
+  {
+    "id": "07",
+    "captain": "Sajin Komamura",
+    "lieutenant": "Tetsuzaemon Iba",
+    "role": "Defesa e Proteção",
+    "description": "Dedicada a tarefas de campo focadas na defesa robusta e proteção de áreas ou pessoas vitais.",
+    "family": null
+  },
+  {
+    "id": "08",
+    "captain": "Shunsui Kyōraku",
+    "lieutenant": "Nanao Ise",
+    "role": "Assuntos Gerais",
+    "description": "Gerencia os assuntos gerais e cotidianos do Seireitei, lidando com questões diversas.",
+    "family": null
+  },
+  {
+    "id": "09",
+    "captain": "Kensei Muguruma",
+    "lieutenant": "Shūhei Hisagi",
+    "role": "Administração Interna",
+    "description": "Foca na gestão administrativa interna e segurança, garantindo que os processos burocráticos funcionem.",
+    "family": null
+  },
+  {
+    "id": "10",
+    "captain": "Tōshirō Hitsugaya",
+    "lieutenant": "Rangiku Matsumoto",
+    "role": "Patrulha de Campo",
+    "description": "Uma força ativa de guarda e patrulha, frequentemente enviada a campo para resposta tática.",
+    "family": null
+  },
+  {
+    "id": "11",
+    "captain": "Kenpachi Zaraki",
+    "lieutenant": "Yachiru Kusajishi",
+    "role": "Combate e Esgrima",
+    "description": "A divisão de combate puro. Focada exclusivamente no treinamento de espadachins e guerra direta.",
+    "family": null
+  },
+  {
+    "id": "12",
+    "captain": "Mayuri Kurotsuchi",
+    "lieutenant": "Nemu Kurotsuchi",
+    "role": "Pesquisa e Desenvolvimento",
+    "description": "Responsável pelo D.P.D., criando novas tecnologias, modificando armas e analisando dados espirituais.",
+    "family": null
+  },
+  {
+    "id": "13",
+    "captain": "Jūshirō Ukitake",
+    "lieutenant": "Vago/Nenhum",
+    "role": "Patrulha Humana",
+    "description": "Serve como a ponte principal com o mundo dos vivos, realizando patrulhas e purificação.",
+    "family": null
+  }
+]

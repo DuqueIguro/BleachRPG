@@ -1,0 +1,235 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* BACKGROUND NOISE */
+.background-noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 20%, #000 120%),
+        repeating-linear-gradient(0deg, transparent, transparent 2px, #111 3px);
+    z-index: -1;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 4px solid #fff;
+    background: #000;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    color: #fff;
+    text-shadow: 4px 4px 0px #d65a18;
+}
+
+.subtitle {
+    font-family: 'Courier New', monospace;
+    color: #d65a18;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* GRID CONTAINER */
+.gotei-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+/* CARD DESIGN */
+.squad-card {
+    background: #000;
+    border: 2px solid #fff;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.squad-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0px #d65a18;
+    border-color: #d65a18;
+    z-index: 2;
+}
+
+/* FAMILY BADGE (Para Shihōin, Iguro, Kuchiki) */
+.family-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d65a18;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 5;
+    border-bottom-right-radius: 5px;
+}
+
+/* NUMBER */
+.division-number {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    line-height: 1;
+    pointer-events: none;
+    transition: color 0.3s;
+}
+
+.squad-card:hover .division-number {
+    color: rgba(214, 90, 24, 0.2);
+}
+
+/* IMAGE */
+.img-wrapper {
+    width: 100%;
+    height: 300px; /* Altura fixa do container da imagem */
+    background-color: #111;
+    border-bottom: 2px solid #fff;
+    overflow: hidden;
+}
+
+.squad-card:hover .img-wrapper {
+    border-bottom-color: #d65a18;
+}
+
+.squad-img {
+    width: 100%;
+    height: 100%;
+    /* 'cover' garante que o container seja preenchido */
+    object-fit: cover; 
+    /* 'top' força o alinhamento pelo topo, evitando cortar cabeças */
+    object-position: center top; 
+    filter: grayscale(100%) contrast(1.1);
+    transition: filter 0.4s ease;
+}
+
+.squad-card:hover .squad-img {
+    filter: grayscale(0%) contrast(1.0);
+}
+
+/* CONTENT */
+.info-wrapper {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* --- NOVO ESTILO PARA O NOME DA DIVISÃO --- */
+.division-title {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 900; /* Extra bold */
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.division-title::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #d65a18; /* Quadrado laranja */
+}
+/* ------------------------------------------- */
+
+.role-title {
+    color: #d65a18;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.captain-name {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.lieutenant-info {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #aaa;
+    border-left: 2px solid #d65a18;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.description-text {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: #ccc;
+    line-height: 1.4;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+/* LOADING & FOOTER */
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    padding: 2rem;
+    border: 1px dashed #d65a18;
+    color: #d65a18;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-family: monospace;
+    color: #444;
+    font-size: 0.8rem;
+    border-top: 1px solid #222;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    .gotei-container { padding: 0 1rem 4rem 1rem; }
+}
