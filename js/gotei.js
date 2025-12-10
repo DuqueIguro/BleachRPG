@@ -29,9 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 ? `<div class="family-badge">${squad.family}</div>` 
                 : '';
 
+            // Lógica para transformar "01" em "1ª" visualmente (opcional, aqui mantive o ID cru + texto)
+            const divNumber = parseInt(squad.id); 
+
             card.innerHTML = `
                 ${familyBadge}
-                <div class="division-number">${squad.id}</div>
+                <div class="division-bg-number">${squad.id}</div>
                 
                 <div class="img-wrapper">
                     <img src="../img/divisao-${squad.id}.png" 
@@ -41,11 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 
                 <div class="info-wrapper">
-                    <span class="role-title">// ${squad.role}</span>
-                    <h2 class="captain-name">${squad.captain}</h2>
-                    <div class="lieutenant-info">
-                        Tenente: ${squad.lieutenant}
+                    <div class="div-header">
+                        <span class="div-name">${divNumber}ª DIVISÃO</span>
+                        <span class="role-title">-- ${squad.role}</span>
                     </div>
+
+                    <h2 class="captain-name">${squad.captain}</h2>
+                    
+                    <div class="lieutenant-info">
+                        <span class="lieutenant-label">Tenente:</span> ${squad.lieutenant}
+                    </div>
+                    
                     <p class="description-text">
                         ${squad.description}
                     </p>

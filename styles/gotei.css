@@ -85,7 +85,7 @@ h1 {
     z-index: 2;
 }
 
-/* FAMILY BADGE (Para Shihōin, Iguro, Kuchiki) */
+/* FAMILY BADGE */
 .family-badge {
     position: absolute;
     top: 0;
@@ -101,8 +101,8 @@ h1 {
     border-bottom-right-radius: 5px;
 }
 
-/* NUMBER */
-.division-number {
+/* NUMBER (Background Watermark) */
+.division-bg-number {
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.05);
     position: absolute;
@@ -113,14 +113,14 @@ h1 {
     transition: color 0.3s;
 }
 
-.squad-card:hover .division-number {
+.squad-card:hover .division-bg-number {
     color: rgba(214, 90, 24, 0.2);
 }
 
 /* IMAGE */
 .img-wrapper {
     width: 100%;
-    height: 300px; /* Altura fixa do container da imagem */
+    height: 300px;
     background-color: #111;
     border-bottom: 2px solid #fff;
     overflow: hidden;
@@ -133,10 +133,9 @@ h1 {
 .squad-img {
     width: 100%;
     height: 100%;
-    /* 'cover' garante que o container seja preenchido */
-    object-fit: cover; 
-    /* 'top' força o alinhamento pelo topo, evitando cortar cabeças */
-    object-position: center top; 
+    /* CORREÇÃO AQUI: Top evita cortar cabeças */
+    object-fit: cover;
+    object-position: top; 
     filter: grayscale(100%) contrast(1.1);
     transition: filter 0.4s ease;
 }
@@ -145,7 +144,7 @@ h1 {
     filter: grayscale(0%) contrast(1.0);
 }
 
-/* CONTENT */
+/* INFO WRAPPER */
 .info-wrapper {
     padding: 1.5rem;
     flex-grow: 1;
@@ -154,52 +153,51 @@ h1 {
     gap: 0.5rem;
 }
 
-/* --- NOVO ESTILO PARA O NOME DA DIVISÃO --- */
-.division-title {
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 900; /* Extra bold */
-    text-transform: uppercase;
-    margin-bottom: 0.2rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+/* NOME DA DIVISÃO (Novo) */
+.div-header {
+    border-bottom: 2px solid #d65a18;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
-.division-title::before {
-    content: '';
+.div-name {
+    color: #d65a18;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     display: block;
-    width: 8px;
-    height: 8px;
-    background-color: #d65a18; /* Quadrado laranja */
 }
-/* ------------------------------------------- */
 
 .role-title {
+    font-family: 'Courier New', monospace;
     color: #d65a18;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: bold;
-    opacity: 0.8;
 }
 
+/* CAPITÃO */
 .captain-name {
     font-size: 1.4rem;
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: 5px;
+    color: #fff;
 }
 
+/* TENENTE */
 .lieutenant-info {
     font-family: 'Courier New', monospace;
     font-size: 0.85rem;
     color: #aaa;
-    border-left: 2px solid #d65a18;
-    padding-left: 10px;
     margin-bottom: 10px;
 }
 
+.lieutenant-label {
+    color: #d65a18;
+    font-weight: bold;
+}
+
+/* DESCRIÇÃO */
 .description-text {
     font-family: 'Courier New', monospace;
     font-size: 0.8rem;
