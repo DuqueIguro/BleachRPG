@@ -1,39 +1,44 @@
-// DADOS DA ÁRVORE (JSON)
+// DADOS DOS HUBS / TEMPORADAS (Atualizado)
 const gameData = [
     {
         id: 1,
-        title: "Academia de Ceifeiros de Almas",
+        title: "Academia Shin'ō",
         subtitle: "1° TEMPORADA - O INÍCIO",
         symbol: "壱", // Kanji para 1
-        desc: "Treinamento básico nas quatro artes: Zanjutsu (Espada), Hakuda (Corpo a Corpo), Hoho (Movimentação) e Kido (Artes Demoníacas). O estudante deve provar seu valor espiritual."
+        desc: "Treinamento básico nas quatro artes: Zanjutsu (Espada), Hakuda (Corpo a Corpo), Hoho (Movimentação) e Kido (Artes Demoníacas). O estudante deve provar seu valor espiritual.",
+        status: "OPEN-ACADEMY"
     },
     {
         id: 2,
         title: "Mundo dos Vivos",
         subtitle: "2° TEMPORADA - SUBSTITUTO",
         symbol: "弐", // Kanji para 2
-        desc: "Patrulha na cidade de Karakura. Purificação de Hollows, uso do Gigai e interação com almas perdidas. Onde a fronteira entre a vida e a morte se cruza."
+        desc: "Patrulha na cidade de Karakura. Purificação de Hollows, uso do Gigai e interação com almas perdidas. Onde a fronteira entre a vida e a morte se cruza.",
+        status: "LOCKED"
     },
     {
         id: 3,
         title: "Soul Society",
         subtitle: "2° TEMPORADA - INVASÃO",
         symbol: "参", // Kanji para 3
-        desc: "Infiltração no Seireitei. Combates contra Tenentes. Despertar do Shikai e a luta para salvar seus aliados da execução central."
+        desc: "Infiltração no Seireitei. Combates contra Tenentes. Despertar do Shikai e a luta para salvar seus aliados da execução central.",
+        status: "LOCKED"
     },
     {
         id: 4,
         title: "Os Capitães",
         subtitle: "3° TEMPORADA - GOTEI 13",
         symbol: "肆", // Kanji para 4
-        desc: "Confronto direto com a elite militar espiritual. Domínio da Bankai necessário para sobreviver à pressão espiritual (Reiatsu) de nível Capitão."
+        desc: "Confronto direto com a elite militar espiritual. Domínio da Bankai necessário para sobreviver à pressão espiritual (Reiatsu) de nível Capitão.",
+        status: "LOCKED"
     },
     {
         id: 5,
         title: "Visoreds",
         subtitle: "HUB SECRETO - MÁSCARA",
         symbol: "仮", 
-        desc: "Controle da Hollowficação interna. A linha tênue entre sanidade e destruição pura. Aumento explosivo de poder por tempo limitado."
+        desc: "Controle da Hollowficação interna. A linha tênue entre sanidade e destruição pura. Aumento explosivo de poder por tempo limitado.",
+        status: "LOCKED"
     }
 ];
 
@@ -43,29 +48,27 @@ const infoTitle = document.getElementById('info-title');
 const infoMeta = document.getElementById('info-meta');
 const infoDesc = document.getElementById('info-desc');
 const infoSymbol = document.querySelector('.symbol-small');
+const actionContainer = document.getElementById('action-container');
 
-// FUNÇÃO PARA CRIAR A ÁRVORE
+// FUNÇÃO PARA CRIAR A ÁRVORE VISUAL
 function renderTree() {
     gameData.forEach((item, index) => {
-        // Cria o wrapper do nó
         const wrapper = document.createElement('div');
         wrapper.className = 'node-wrapper';
         
-        // Cria o botão (diamante)
         const btn = document.createElement('div');
         btn.className = 'node-btn';
-        btn.dataset.id = index; // Guarda o índice para referência
         
-        // Conteúdo interno (Kanji/Numero)
+        // Se estiver bloqueado, adiciona uma classe visual ao nó da árvore também
+        if (item.status === 'LOCKED') {
+            btn.classList.add('node-locked');
+        }
+        
         btn.innerHTML = `<div class="node-content">${item.symbol}</div>`;
 
-        // Evento de Clique
         btn.addEventListener('click', () => {
-            // Remove classe ativa de todos
             document.querySelectorAll('.node-btn').forEach(b => b.classList.remove('active'));
-            // Adiciona neste
             btn.classList.add('active');
-            // Atualiza o painel
             updateInfoPanel(item);
         });
 
@@ -74,27 +77,23 @@ function renderTree() {
     });
 }
 
-// FUNÇÃO DE ATUALIZAÇÃO DO PAINEL (Com efeito Typewriter)
 let typewriterTimeout;
 
 function updateInfoPanel(data) {
-    // Efeito de Glitch no Título
+    // 1. Títulos e Símbolos
     infoTitle.innerText = randomGlitch(data.title);
     setTimeout(() => { infoTitle.innerText = data.title; }, 100);
 
     infoMeta.innerText = data.subtitle;
     infoSymbol.innerText = data.symbol;
     
-    // Limpa texto anterior
+    // 2. Lógica de Descrição (Typewriter)
     infoDesc.innerHTML = '';
-    
-    // Efeito de Digitação
+    clearTimeout(typewriterTimeout);
+
     let i = 0;
     const text = data.desc;
-    const speed = 20;
-
-    // Cancela digitação anterior se houver
-    clearTimeout(typewriterTimeout);
+    const speed = 15; // Velocidade da digitação
 
     function type() {
         if (i < text.length) {
@@ -106,19 +105,46 @@ function updateInfoPanel(data) {
         }
     }
     type();
+
+    // 3. Renderiza o Botão baseado no Status
+    renderActionButton(data);
 }
 
-// UTILITÁRIO: Gera caracteres aleatórios para efeito glitch
+function renderActionButton(data) {
+    // Reinicia animação do container
+    actionContainer.innerHTML = '';
+    actionContainer.style.animation = 'none';
+    actionContainer.offsetHeight; /* trigger reflow */
+    actionContainer.style.animation = 'fadeIn 0.5s forwards 0.5s';
+
+    const btn = document.createElement('a');
+    btn.className = 'action-btn';
+
+    // === LÓGICA MESTRA DE REDIRECIONAMENTO ===
+    if (data.status === "OPEN-ACADEMY") {
+        // CAMINHO LIVRE
+        btn.innerText = "ACESSAR DADOS";
+        btn.href = "#"; // Substitua pelo link real da página (ex: hub_academia.html)
+        btn.classList.remove('btn-locked'); 
+    } else {
+        // CAMINHO BLOQUEADO
+        btn.innerText = "ACESSO NEGADO";
+        btn.href = "pages/reiatsuInsuficiente.html";
+        btn.classList.add('btn-locked'); // Classe para mudar a cor do botão
+    }
+
+    actionContainer.appendChild(btn);
+}
+
+// Utilitário de Glitch
 function randomGlitch(text) {
-    const chars = '!@#$%^&*<>?';
-    return text.split('').map(c => Math.random() > 0.5 ? chars[Math.floor(Math.random() * chars.length)] : c).join('');
+    const chars = '!@#$%^&*<>?JP¥';
+    return text.split('').map(c => Math.random() > 0.6 ? chars[Math.floor(Math.random() * chars.length)] : c).join('');
 }
 
-// INICIALIZAÇÃO
+// Inicialização
 window.onload = () => {
     renderTree();
-    
-    // CSS extra para o cursor piscar
     const styleSheet = document.createElement("style");
     styleSheet.innerText = `@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }`;
     document.head.appendChild(styleSheet);

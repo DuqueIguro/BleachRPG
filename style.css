@@ -1,4 +1,4 @@
-/* --- RESET & BASE (Mantendo identidade visual) --- */
+/* --- RESET & BASE --- */
 * {
     margin: 0;
     padding: 0;
@@ -36,14 +36,13 @@ body {
 /* --- COLUNA DA ÁRVORE (ESQUERDA) --- */
 .tree-section {
     flex: 1;
-    min-width: 300px;
+    min-width: 320px;
     position: relative;
     overflow-y: auto;
     padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Scrollbar estilizada */
     scrollbar-width: thin;
     scrollbar-color: #d65a18 #111;
 }
@@ -64,7 +63,7 @@ body {
     pointer-events: none;
 }
 
-/* LINHA DO TEMPO (Reiraku) */
+/* LINHA DO TEMPO */
 .timeline-line {
     position: absolute;
     top: 0; bottom: 0; left: 50%;
@@ -91,7 +90,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Alternância visual (Zig-zag sutil) */
 .node-wrapper:nth-child(odd) { transform: translateX(-30px); }
 .node-wrapper:nth-child(even) { transform: translateX(30px); }
 
@@ -107,10 +105,11 @@ body {
     justify-content: center;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    position: relative;
 }
 
 .node-content {
-    transform: rotate(-45deg); /* Texto reto */
+    transform: rotate(-45deg);
     font-size: 1.2rem;
     color: #555;
     font-weight: bold;
@@ -127,6 +126,7 @@ body {
     border-color: #d65a18;
     background-color: #1a0a00;
     box-shadow: 0 0 20px #d65a18, inset 0 0 10px #d65a18;
+    z-index: 10;
 }
 
 .node-btn.active .node-content {
@@ -150,8 +150,10 @@ body {
     border: 4px solid #fff;
     padding: 2rem;
     background: rgba(0, 0, 0, 0.9);
-    box-shadow: 15px 15px 0px #d65a18; /* Sombra sólida do seu estilo */
+    box-shadow: 15px 15px 0px #d65a18;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-header {
@@ -197,8 +199,52 @@ h2 {
     font-size: 1rem;
     line-height: 1.6;
     color: #ccc;
-    font-family: 'Courier New', monospace; /* Fonte tech */
-    min-height: 100px;
+    font-family: 'Courier New', monospace;
+    min-height: 80px;
+    margin-bottom: 20px;
+}
+
+/* CONTAINER E ESTILO DO BOTÃO */
+.action-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Altura fixa para evitar pulo de layout */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards 0.5s; /* Delay na entrada */
+}
+
+@keyframes fadeIn { to { opacity: 1; } }
+
+.action-btn {
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.action-btn:hover {
+    background: #d65a18;
+    border-color: #d65a18;
+    color: #fff;
+    box-shadow: 0 0 15px #d65a18;
+}
+
+.action-btn.locked-link:hover {
+    background: #333;
+    border-color: #555;
+    color: #888;
+    box-shadow: none;
+    cursor: not-allowed;
 }
 
 .card-footer {
@@ -211,12 +257,12 @@ h2 {
     padding-top: 10px;
 }
 
-/* Responsividade Mobile */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .main-wrapper { flex-direction: column; overflow-y: auto; }
-    .tree-section { flex: none; height: 300px; border-bottom: 2px solid #d65a18; }
+    .tree-section { flex: none; height: 350px; border-bottom: 2px solid #d65a18; }
     .timeline-line { transform: rotate(90deg); width: 100%; left: 0; top: 50%; height: 2px; }
-    .tree-container { flex-direction: row; padding: 0 50px; width: max-content; }
+    .tree-container { flex-direction: row; padding: 0 50px; width: max-content; margin: 0 auto; }
     .node-wrapper:nth-child(odd) { transform: translateY(-30px); }
     .node-wrapper:nth-child(even) { transform: translateY(30px); }
     .info-section { padding: 20px; }
