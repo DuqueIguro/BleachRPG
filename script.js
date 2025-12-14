@@ -124,12 +124,12 @@ function renderActionButton(data) {
     if (data.status === "OPEN-ACADEMY") {
         // CAMINHO LIVRE
         btn.innerText = "ACESSAR DADOS";
-        btn.href = "#"; // Substitua pelo link real da página (ex: hub_academia.html)
+        btn.href = "pages/hubs/hubAcademia";
         btn.classList.remove('btn-locked'); 
     } else {
         // CAMINHO BLOQUEADO
         btn.innerText = "ACESSO NEGADO";
-        btn.href = "pages/reiatsuInsuficiente.html";
+        btn.href = "pages/reiatsuInsuficiente";
         btn.classList.add('btn-locked'); // Classe para mudar a cor do botão
     }
 
