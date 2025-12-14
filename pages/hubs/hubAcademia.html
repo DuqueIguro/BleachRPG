@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Shin'ō - Central Hub</title>
+    <link rel="stylesheet" href="../../styles/hubAcademia.css">
+</head>
+<body>
+
+    <div class="background-noise"></div>
+
+    <div class="main-wrapper">
+        <header class="academy-header">
+            <div class="symbol-small"></div>
+            <h1>Academia Shin'ō</h1>
+            <div class="user-status">Status: <span style="color: #d65a18;">Estudante</span></div>
+        </header>
+
+        <main class="hub-grid">
+            
+            <section class="card notices-section">
+                <h2><span class="marker">>></span> Comunicados Oficiais</h2>
+                <div id="notices-container" class="terminal-list">
+                    <p>Carregando dados da Central 46...</p>
+                </div>
+            </section>
+
+            <section class="card calendar-section">
+                <h2><span class="marker">>></span> Cronograma de Aulas</h2>
+                <div class="table-container">
+                    <table id="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Horário</th>
+                                <th>Matéria/Missão</th>
+                                <th>Instrutor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card nav-section">
+                <h2><span class="marker">>></span> Acesso Rápido</h2>
+                <div class="nav-buttons">
+                    <a href="../academia/biblioteca.html" class="nav-btn">Biblioteca Espiritual</a>
+                    <a href="../academia/dojo.html" class="nav-btn">Dojo de Zanjutsu</a>
+                    <a href="../academia/secretaria.html" class="nav-btn">Secretaria</a>
+                    <a href="../../index.html" class="nav-btn logout">Sair do Sistema</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="assistant-overlay" class="assistant-container hidden">
+        <div class="assistant-avatar">
+            <img src="../../img/Capi1.png" id="capi-img" alt="Professora Capivara">
+        </div>
+        <div class="assistant-box">
+            <h3 class="assistant-name">Prof. Capi-sensei</h3>
+            <p id="assistant-text" class="typewriter-text"></p>
+            <button id="next-dialogue" class="btn-small">Próximo ></button>
+            <button id="close-assistant" class="btn-close">X</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 SEREITEI. Sistema de Ensino Espiritual.
+    </footer>
+
+    <script src="../../js/hubAcademia.js"></script>
+</body>
+</html>

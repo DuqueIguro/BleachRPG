@@ -1,0 +1,22 @@
+{
+  "aulas": [
+    {
+      "dia": "Segunda",
+      "horario": "19:00",
+      "materia": "Zanjutsu Básico",
+      "instrutor": "Renji Abarai"
+    },
+    {
+      "dia": "Quarta",
+      "horario": "20:00",
+      "materia": "História da Soul Society",
+      "instrutor": "Capi-sensei"
+    },
+    {
+      "dia": "Sexta",
+      "horario": "18:30",
+      "materia": "Prática de Kido #1-10",
+      "instrutor": "Hinamori Momo"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+/* --- RESET & BASE (Herdado de ReiatsuInsuficiente) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    /* Adicionando padding para telas menores */
+    padding-bottom: 40px; 
+}
+
+/* --- FUNDO --- */
+.background-noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 20%, #000 120%),
+        repeating-linear-gradient(0deg, transparent, transparent 2px, #111 3px);
+    z-index: -1;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* --- LAYOUT --- */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* HEADER */
+.academy-header {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.academy-header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0px #d65a18;
+    letter-spacing: -2px;
+}
+
+.user-status {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    background: #111;
+}
+
+/* GRID PRINCIPAL */
+.hub-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Coluna esquerda menor, direita maior */
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+
+/* ESTILO DOS CARDS (Reutilizando estética do container original) */
+.card {
+    border: 4px solid #ffffff;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 8px 8px 0px #d65a18;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 0px #d65a18;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.marker {
+    color: #d65a18;
+}
+
+/* ÁREAS ESPECÍFICAS */
+
+/* Avisos */
+.notices-section {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.terminal-list p, .terminal-list li {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    border-left: 3px solid #d65a18;
+    padding-left: 10px;
+    color: #ccc;
+}
+
+.notice-date {
+    color: #d65a18;
+    font-weight: bold;
+    display: block;
+    font-size: 0.8rem;
+}
+
+/* Calendário */
+.calendar-section {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Courier New', monospace;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    color: #d65a18;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #111;
+}
+
+/* Navegação */
+.nav-section {
+    grid-column: 1 / -1; /* Ocupa largura total */
+    grid-row: 2 / 3;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+}
+
+.nav-btn:hover {
+    background-color: #d65a18;
+    color: #fff;
+    box-shadow: 0 0 10px #d65a18;
+    border-color: #d65a18;
+}
+
+.nav-btn.logout {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #555;
+}
+
+.nav-btn.logout:hover {
+    background-color: #333;
+    border-color: #fff;
+}
+
+/* --- ASSISTENTE CAPIVARA --- */
+.assistant-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    display: flex;
+    align-items: flex-end;
+    z-index: 100;
+    transition: opacity 0.5s ease;
+}
+
+.assistant-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.assistant-avatar img {
+    width: 120px; /* Ajuste conforme tamanho real da imagem */
+    height: auto;
+    position: relative;
+    bottom: -10px;
+    z-index: 102;
+    filter: drop-shadow(5px 5px 0px #000);
+}
+
+.assistant-box {
+    background: #fff;
+    color: #000;
+    border: 4px solid #d65a18;
+    padding: 20px;
+    margin-left: -20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 101;
+    width: 100%;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.8);
+}
+
+.assistant-box::after {
+    /* Triângulo do balão de fala */
+    content: '';
+    position: absolute;
+    left: -14px;
+    bottom: 20px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-right: 15px solid #d65a18; 
+}
+
+.assistant-name {
+    color: #d65a18;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.typewriter-text {
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    min-height: 3rem;
+    font-weight: bold;
+}
+
+.btn-small {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    float: right;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.btn-small:hover {
+    background: #d65a18;
+}
+
+.btn-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #555;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-family: monospace;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .hub-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .assistant-container {
+        width: 90%;
+        bottom: 10px;
+        right: 5%;
+    }
+
+    .academy-header h1 {
+        font-size: 2rem;
+    }
+}
