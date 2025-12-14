@@ -12,10 +12,9 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
-    padding-bottom: 60px; /* Espaço para footer/assistente */
+    padding-bottom: 60px;
 }
 
-/* --- FUNDO (Reishi) --- */
 .background-noise {
     position: fixed;
     top: 0;
@@ -29,7 +28,6 @@ body {
     pointer-events: none;
 }
 
-/* --- LAYOUT GERAL --- */
 .main-wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -38,14 +36,15 @@ body {
     z-index: 1;
 }
 
-/* HEADER */
+/* --- HEADER ATUALIZADO --- */
 .academy-header {
     border-bottom: 4px solid #fff;
     padding-bottom: 20px;
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* Garante Titulo na Esquerda e Status na Direita */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .academy-header h1 {
@@ -61,9 +60,11 @@ body {
     border: 1px solid #333;
     padding: 5px 15px;
     background: #111;
+    /* Garante que o status não quebre linha de forma feia */
+    white-space: nowrap; 
 }
 
-/* --- ESTILO DOS CARDS (Containers) --- */
+/* --- CARDS GERAIS --- */
 .card {
     border: 4px solid #ffffff;
     background: rgba(0, 0, 0, 0.9);
@@ -87,13 +88,22 @@ body {
     color: #fff;
 }
 
-.marker {
-    color: #d65a18;
-}
+.marker { color: #d65a18; }
 
-/* --- SEÇÃO: SOBRE (NOVO) --- */
+/* --- SEÇÃO SOBRE (ATUALIZADO) --- */
 .about-section {
     text-align: center;
+}
+
+/* Nova classe para a imagem */
+.about-img {
+    display: block;
+    margin: 0 auto 20px auto; /* Centraliza horizontalmente e dá margem embaixo */
+    max-width: 100%;
+    max-height: 300px; /* Limite de altura para não estourar a tela */
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px rgba(214, 90, 24, 0.3); /* Glow leve laranja */
+    object-fit: cover;
 }
 
 .about-content p {
@@ -105,16 +115,8 @@ body {
     text-align: justify;
 }
 
-.about-content strong {
-    color: #fff;
-    text-decoration: underline decoration-color #d65a18;
-}
-
-.about-content em {
-    color: #d65a18;
-    font-style: normal;
-    font-weight: bold;
-}
+.about-content strong { color: #fff; text-decoration: underline decoration-color #d65a18; }
+.about-content em { color: #d65a18; font-style: normal; font-weight: bold; }
 
 .motto {
     font-size: 1.2rem;
@@ -130,18 +132,17 @@ body {
     text-align: center !important;
 }
 
-/* --- GRID PRINCIPAL --- */
+/* --- GRID E CONTEÚDO --- */
 .hub-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Coluna esquerda (Avisos) menor, direita (Calendar) maior */
+    grid-template-columns: 1fr 2fr;
     gap: 30px;
 }
 
-/* AVISOS */
-.notices-section {
-    grid-column: 1 / 2;
-}
+.notices-section { grid-column: 1 / 2; }
+.calendar-section { grid-column: 2 / 3; }
 
+/* Avisos */
 .terminal-list p {
     font-family: 'Courier New', monospace;
     font-size: 0.9rem;
@@ -151,50 +152,17 @@ body {
     color: #ccc;
     line-height: 1.4;
 }
+.notice-date { color: #d65a18; font-weight: bold; font-size: 0.8rem; }
 
-.notice-date {
-    color: #d65a18;
-    font-weight: bold;
-    display: block;
-    font-size: 0.8rem;
-    margin-bottom: 2px;
-}
+/* Tabela */
+.table-container { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-family: 'Courier New', monospace; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
+th { color: #d65a18; text-transform: uppercase; font-size: 0.9rem; }
+tr:hover { background-color: #111; }
 
-/* CALENDÁRIO */
-.calendar-section {
-    grid-column: 2 / 3;
-}
-
-.table-container {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Courier New', monospace;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #333;
-}
-
-th {
-    color: #d65a18;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-tr:hover {
-    background-color: #111;
-}
-
-/* NAVEGAÇÃO */
-.nav-section {
-    grid-column: 1 / -1; /* Ocupa largura total */
-}
+/* --- NAVEGAÇÃO (BOTÕES ATUALIZADOS) --- */
+.nav-section { grid-column: 1 / -1; }
 
 .nav-buttons {
     display: flex;
@@ -213,8 +181,14 @@ tr:hover {
     transition: all 0.3s ease;
     border: 2px solid #fff;
     flex-grow: 1;
-    text-align: center;
     max-width: 250px;
+    min-height: 60px; /* Altura mínima para ficar bonito */
+    
+    /* Centralização Vertical e Horizontal do Texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-btn:hover {
@@ -235,7 +209,7 @@ tr:hover {
     border-color: #fff;
 }
 
-/* --- ASSISTENTE CAPIVARA --- */
+/* --- ASSISTENTE --- */
 .assistant-container {
     position: fixed;
     bottom: 20px;
@@ -247,10 +221,7 @@ tr:hover {
     transition: opacity 0.5s ease;
 }
 
-.assistant-container.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
+.assistant-container.hidden { opacity: 0; pointer-events: none; }
 
 .assistant-avatar img {
     width: 130px;
@@ -259,7 +230,7 @@ tr:hover {
     bottom: -5px;
     z-index: 102;
     filter: drop-shadow(5px 5px 0px #000);
-    margin-right: -20px; /* Sobrepor levemente */
+    margin-right: -20px;
 }
 
 .assistant-box {
@@ -274,7 +245,6 @@ tr:hover {
 }
 
 .assistant-box::after {
-    /* Triângulo do balão */
     content: '';
     position: absolute;
     left: -14px;
@@ -296,15 +266,12 @@ tr:hover {
 .typewriter-text {
     font-family: 'Courier New', monospace;
     font-size: 0.95rem;
-    min-height: 3.5rem; /* Altura fixa para não pular */
+    min-height: 3.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.assistant-controls {
-    display: flex;
-    justify-content: flex-end;
-}
+.assistant-controls { display: flex; justify-content: flex-end; }
 
 .btn-small {
     background: #000;
@@ -316,15 +283,7 @@ tr:hover {
     font-size: 0.8rem;
     font-weight: bold;
 }
-
-.btn-small:disabled {
-    opacity: 0.5;
-    cursor: wait;
-}
-
-.btn-small:hover:not(:disabled) {
-    background: #d65a18;
-}
+.btn-small:hover { background: #d65a18; }
 
 .btn-close {
     position: absolute;
@@ -338,11 +297,6 @@ tr:hover {
     color: #888;
 }
 
-.btn-close:hover {
-    color: #d65a18;
-}
-
-/* RODAPÉ */
 footer {
     text-align: center;
     padding: 20px;
@@ -351,29 +305,15 @@ footer {
     margin-top: 40px;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .hub-grid {
-        grid-template-columns: 1fr;
-    }
-    
+    .hub-grid { grid-template-columns: 1fr; }
     .academy-header {
         flex-direction: column;
+        justify-content: center;
+        gap: 15px;
         text-align: center;
     }
-
-    .academy-header h1 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-
-    .assistant-container {
-        width: 95%;
-        right: 2.5%;
-        bottom: 10px;
-    }
-    
-    .assistant-avatar img {
-        width: 100px;
-    }
+    .academy-header h1 { font-size: 2rem; }
+    .assistant-container { width: 95%; right: 2.5%; bottom: 10px; }
+    .assistant-avatar img { width: 100px; }
 }
