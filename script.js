@@ -129,7 +129,7 @@ function renderActionButton(data) {
     } else {
         // CAMINHO BLOQUEADO
         btn.innerText = "ACESSO NEGADO";
-        btn.href = "pages/reiatsuInsuficiente";
+        btn.href = "pages/ReiatsuInsuficiente";
         btn.classList.add('btn-locked'); // Classe para mudar a cor do botão
     }
 
