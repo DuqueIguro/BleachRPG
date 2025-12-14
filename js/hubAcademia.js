@@ -9,27 +9,30 @@ document.addEventListener('DOMContentLoaded', () => {
 async function loadNotices() {
     const container = document.getElementById('notices-container');
     
-    // Caminho relativo para a pasta data
     try {
+        // Busca o JSON na pasta data
         const response = await fetch('../../data/academia_notices.json');
-        if (!response.ok) throw new Error("Erro na rede");
+        if (!response.ok) throw new Error("Erro de conexão");
         const data = await response.json();
 
-        container.innerHTML = ''; // Limpa loading
+        container.innerHTML = ''; 
 
         data.avisos.forEach(aviso => {
             const div = document.createElement('div');
+            // Formata o HTML do aviso
             div.innerHTML = `
-                <span class="notice-date">[${aviso.data}]</span>
-                ${aviso.titulo}
+                <p>
+                    <span class="notice-date">[${aviso.data}]</span>
+                    ${aviso.titulo}
+                </p>
             `;
             container.appendChild(div);
         });
     } catch (error) {
-        // Fallback caso não tenha JSON ou servidor rodando
+        // Fallback se não achar o arquivo
         container.innerHTML = `
-            <p><span class="notice-date">[HOJE]</span> Bem-vindo à Academia.</p>
-            <p><span class="notice-date">[ERRO]</span> Falha ao conectar com banco de dados espiritual.</p>
+            <p><span class="notice-date">[SISTEMA]</span> Erro ao conectar com os arquivos da Seireitei.</p>
+            <p>Certifique-se que o arquivo 'data/academia_notices.json' existe.</p>
         `;
     }
 }
@@ -39,7 +42,7 @@ async function loadCalendar() {
     
     try {
         const response = await fetch('../../data/academia_calendar.json');
-        if (!response.ok) throw new Error("Erro na rede");
+        if (!response.ok) throw new Error("Erro de conexão");
         const data = await response.json();
 
         tbody.innerHTML = '';
@@ -57,7 +60,7 @@ async function loadCalendar() {
         });
 
     } catch (error) {
-        tbody.innerHTML = `<tr><td colspan="4">Sem dados de agendamento disponíveis.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="4">Sistema de agendamento offline.</td></tr>`;
     }
 }
 
@@ -70,79 +73,86 @@ function initAssistant() {
     const btnClose = document.getElementById('close-assistant');
     const imgElem = document.getElementById('capi-img');
 
-    // Verifica se o usuário já viu o tutorial (opcional, usando localStorage)
-    if (localStorage.getItem('tutorialSeen')) {
-        overlay.classList.add('hidden');
-        return;
-    } else {
-        overlay.classList.remove('hidden');
-    }
+    // Remove a classe hidden para mostrar o assistente
+    // (Você pode usar localStorage aqui se quiser que apareça só uma vez)
+    overlay.classList.remove('hidden');
 
     // Roteiro do Tutorial
     const tutorialSteps = [
         {
-            text: "Olá, novato! Bem-vindo à Academia Shin'ō. Eu sou a Capi-sensei, sua guia.",
-            img: "../../img/Capi1.png" // Capi1: Feliz/Normal
+            text: "Saudações, estudante! Bem-vindo ao Hub da Academia Shin'ō. Eu sou a Capi-sensei!",
+            img: "../../img/Capi1.png" // Feliz
         },
         {
-            text: "Aqui no HUB você encontra seus horários de aula e avisos da Central 46.",
-            img: "../../img/Capi2.png" // Capi2: Apontando ou Explicando
+            text: "Acima, na seção 'Sobre', você aprende nossa história. À esquerda, fique atento aos avisos oficiais.",
+            img: "../../img/Capi2.png" // Explicando
         },
         {
-            text: "Se sua Reiatsu estiver baixa, não esqueça de passar no Dojo para treinar!",
-            img: "../../img/Capi3.png" // Capi3: Séria ou Motivada
+            text: "No calendário, verifique suas aulas. Não tolerei atrasos nas minhas aulas de História!",
+            img: "../../img/Capi3.png" // Séria
         },
         {
-            text: "Agora vá! Estude muito para se tornar um bom Shinigami!",
-            img: "../../img/Capi1.png"
+            text: "Use os botões abaixo para acessar a Biblioteca ou o Dojo. Bom estudo!",
+            img: "../../img/Capi1.png" // Feliz
         }
     ];
 
     let currentStep = 0;
+    let isTyping = false;
 
-    // Função de Digitação (Typewriter)
+    // Função de Digitação
     function typeText(text) {
         textElem.innerHTML = "";
         let i = 0;
-        btnNext.disabled = true; // Bloqueia botão enquanto digita
+        isTyping = true;
+        btnNext.disabled = true; // Evita pular rápido demais
         
         function typing() {
             if (i < text.length) {
                 textElem.innerHTML += text.charAt(i);
                 i++;
-                setTimeout(typing, 30); // Velocidade
+                setTimeout(typing, 35); // Velocidade da digitação
             } else {
+                isTyping = false;
                 btnNext.disabled = false;
             }
         }
         typing();
     }
 
-    // Inicializa
-    imgElem.src = tutorialSteps[0].img;
-    typeText(tutorialSteps[0].text);
+    // Inicialização
+    updateAssistantUI();
 
-    // Evento Próximo
-    btnNext.addEventListener('click', () => {
-        currentStep++;
+    function updateAssistantUI() {
         if (currentStep < tutorialSteps.length) {
             imgElem.src = tutorialSteps[currentStep].img;
             typeText(tutorialSteps[currentStep].text);
             
-            // Muda texto do botão no último passo
+            // Texto do botão no final
             if (currentStep === tutorialSteps.length - 1) {
-                btnNext.innerText = "Encerrar";
+                btnNext.innerText = "Entendido!";
+            } else {
+                btnNext.innerText = "Próximo >";
             }
+        }
+    }
+
+    // Botão Próximo
+    btnNext.addEventListener('click', () => {
+        if (isTyping) return; // Segurança extra
+
+        currentStep++;
+        if (currentStep < tutorialSteps.length) {
+            updateAssistantUI();
         } else {
             closeTutorial();
         }
     });
 
-    // Evento Fechar
+    // Botão Fechar
     btnClose.addEventListener('click', closeTutorial);
 
     function closeTutorial() {
         overlay.classList.add('hidden');
-        localStorage.setItem('tutorialSeen', 'true'); // Salva que já viu
     }
 }
