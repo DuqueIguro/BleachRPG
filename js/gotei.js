@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="division-bg-number">${squad.id}</div>
                 
                 <div class="img-wrapper">
-                    <img src="../img/divisao-${squad.id}.png" 
+                    <img src="../img/capitoes/divisao-${squad.id}.png" 
                          alt="Capitão da Divisão ${squad.id}" 
                          class="squad-img"
                          onerror="this.src='https://placehold.co/400x300/111/FFF?text=IMG+MISSING'">
