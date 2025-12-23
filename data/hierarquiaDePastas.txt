@@ -1,0 +1,20 @@
+↳ data
+  - ...
+↳ img
+  ↳ capitoes
+    - ...
+  ↳ docentes
+    - ...
+  - ...
+↳ js
+  - ...
+↳ pages
+  ↳ hubs
+    - hubAcademia.html
+  ↳ academia
+  - gotei.html
+  - ReiatsuInsuficiente.html
+↳ styles
+  - ...
+- CNAME
+- index.html

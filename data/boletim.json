@@ -1,0 +1,52 @@
+{
+  "config": {
+    "gradeSystem": {
+      "default": "一",
+      "legend": {
+        "一": { "name": "Sem Nota", "value": "N/A" },
+        "五": { "name": "Sucesso Excelente", "value": 2 },
+        "六": { "name": "Sucesso Normal", "value": 1 },
+        "七": { "name": "Mediano", "value": 0 },
+        "八": { "name": "Falha", "value": -1 },
+        "九": { "name": "Falha Grave", "value": -2 },
+        "十": { "name": "Falha Sistêmica", "value": "BLOQUEIO" }
+      }
+    },
+    "subjects": [
+      "Zanjutsu",
+      "Hakuda",
+      "Hohō",
+      "Kidō",
+      "Controle de Reiatsu",
+      "História da Sociedade das Almas",
+      "Doutrina & Conduta Militar",
+      "Ética e Psicologia"
+    ]
+  },
+  "students": [
+    {
+      "name": "Duque Iguro",
+      "grades": {"Zanjutsu": "十", "Hakuda": "五", "Hohō": "六", "Kidō": "七", "Controle de Reiatsu": "五", "História da Sociedade das Almas": "六", "Doutrina & Conduta Militar": "五", "Ética e Psicologia": "六" }
+    },
+    {
+      "name": "Kagura Shihoin",
+      "grades": {}
+    },
+    {
+      "name": "Mizuki Yukihira",
+      "grades": {}
+    },
+    {
+      "name": "Nagisa Kurogane",
+      "grades": {}
+    },
+    {
+      "name": "Seshomaru",
+      "grades": {}
+    },
+    {
+      "name": "Shiryu Iguro",
+      "grades": {}
+    }
+  ]
+}
