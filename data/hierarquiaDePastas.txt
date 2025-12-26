@@ -12,6 +12,8 @@
   ↳ hubs
     - hubAcademia.html
   ↳ academia
+    - boletim.html
+    - docentes.html
   - gotei.html
   - ReiatsuInsuficiente.html
 ↳ styles

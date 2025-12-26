@@ -1,4 +1,4 @@
-// DADOS DOS HUBS / TEMPORADAS (Atualizado)
+// DADOS DOS HUBS / TEMPORADAS 
 const gameData = [
     {
         id: 1,
@@ -10,34 +10,26 @@ const gameData = [
     },
     {
         id: 2,
-        title: "Mundo dos Vivos",
-        subtitle: "2° TEMPORADA - SUBSTITUTO",
+        title: "As 13 divisões de Guardas da Corte",
+        subtitle: "2° TEMPORADA",
         symbol: "弐", // Kanji para 2
-        desc: "Patrulha na cidade de Karakura. Purificação de Hollows, uso do Gigai e interação com almas perdidas. Onde a fronteira entre a vida e a morte se cruza.",
+        desc: "Missões de patrulha e combate contra Hollows. Desenvolvimento do Shikai e primeiros confrontos reais com inimigos perigosos.",
         status: "LOCKED"
     },
     {
         id: 3,
-        title: "Soul Society",
-        subtitle: "2° TEMPORADA - INVASÃO",
+        title: "Crepúsculo",
+        subtitle: "3° TEMPORADA",
         symbol: "参", // Kanji para 3
-        desc: "Infiltração no Seireitei. Combates contra Tenentes. Despertar do Shikai e a luta para salvar seus aliados da execução central.",
+        desc: "Exploração das ameaças emergentes no mundo espiritual. Introdução ao Bankai e batalhas contra inimigos formidáveis.",
         status: "LOCKED"
     },
     {
         id: 4,
-        title: "Os Capitães",
-        subtitle: "3° TEMPORADA - GOTEI 13",
+        title: "Até Que a Alma quebre",
+        subtitle: "4° TEMPORADA",
         symbol: "肆", // Kanji para 4
         desc: "Confronto direto com a elite militar espiritual. Domínio da Bankai necessário para sobreviver à pressão espiritual (Reiatsu) de nível Capitão.",
-        status: "LOCKED"
-    },
-    {
-        id: 5,
-        title: "Visoreds",
-        subtitle: "HUB SECRETO - MÁSCARA",
-        symbol: "仮", 
-        desc: "Controle da Hollowficação interna. A linha tênue entre sanidade e destruição pura. Aumento explosivo de poder por tempo limitado.",
         status: "LOCKED"
     }
 ];
