@@ -1,50 +1,32 @@
-[
-  {
-    "nome": "Miharu Kagutsuchi",
-    "materia": "Zanjutsu",
-    "imagem": "../../img/docentes/MiharuKagutsuchi.png",
-    "descricao": "Mestre na arte da esgrima, Miharu foca na precisão do corte e na conexão espiritual com a Zanpakutō. Suas aulas são conhecidas pelo rigor físico e disciplina absoluta."
-  },
-  {
-    "nome": "Monjirou Takahashi",
-    "materia": "Hakuda",
-    "imagem": "../../img/docentes/MonjirouTakahashi.png",
-    "descricao": "Especialista em combate corpo a corpo. Monjirou ensina que um Ceifeiro de Almas nunca está desarmado enquanto possuir seu próprio corpo como ferramenta de combate."
-  },
-  {
-    "nome": "Yumeko Sai",
-    "materia": "Hohō",
-    "imagem": "../../img/docentes/YumekoSai.png",
-    "descricao": "Mestra da movimentação rápida e do Shunpo. Yumeko preza pela agilidade e furtividade, ensinando que a melhor defesa é nunca estar onde o inimigo golpeia."
-  },
-  {
-    "nome": "Akio Murasame",
-    "materia": "Kidō",
-    "imagem": "../../img/docentes/AkioMurasame.png",
-    "descricao": "Um acadêmico das artes demoníacas. Akio instrui os alunos na manipulação da pressão espiritual para conjurar feitiços de destruição e selamento com perfeição métrica."
-  },
-  {
-    "nome": "Monja Sokitsu",
-    "materia": "Controle de Reiatsu",
-    "imagem": "../../img/docentes/MonjaSokitsu.png",
-    "descricao": "Focada no equilíbrio interno, a Monja Sokitsu guia os alunos na difícil tarefa de suprimir ou liberar sua pressão espiritual de forma consciente e eficiente."
-  },
-  {
-    "nome": "Capy-Sensei",
-    "materia": "História da Sociedade das Almas",
-    "imagem": "../../img/docentes/CapySensei.png",
-    "descricao": "A alma mais sábia da academia. Capy-sensei narra as eras passadas e a fundação do Gotei 13, garantindo que o passado nunca seja esquecido pelos novos recrutas."
-  },
-  {
-    "nome": "Katsuji Shiraname",
-    "materia": "Doutrina & Conduta Militar / Ética e Psicologia",
-    "imagem": "../../img/docentes/Katsuji Shiraname.png",
-    "descricao": "Responsável por moldar o caráter dos futuros oficiais. Katsuji impõe os códigos de honra e a resiliência mental necessária para enfrentar os perigos do Hueco Mundo."
-  },
-  {
-    "nome": "Hanae Kurogane",
-    "materia": "Ética e Psicologia",
-    "imagem": "../../img/docentes/HanaeKurogane.png",
-    "descricao": "Atuando em conjunto com Katsuji, Hanae foca no bem-estar psicológico e no discernimento moral, preparando a mente das almas para o peso do dever."
-  }
-]
+{
+  "diretoria": [
+    {
+      "nome": "Seika Fumetsu",
+      "cargo": "Diretora da Academia",
+      "imagem": "../../img/docentes/SeikaFumetsu.png",
+      "descricao": "Responsável pela visão estratégica e pela manutenção dos padrões de excelência que moldam os futuros defensores da Soul Society."
+    },
+    {
+      "nome": "Capy-Sensei",
+      "cargo": "Coordenadora Geral",
+      "imagem": "../../img/docentes/CapySensei.png",
+      "descricao": "Supervisiona o currículo acadêmico e a integração entre as diferentes artes de combate, garantindo uma formação equilibrada."
+    },
+    {
+      "nome": "Tatsuma Shihōin",
+      "cargo": "Coordenador de Campo",
+      "imagem": "../../img/docentes/TatsumaShihoin.jpeg",
+      "descricao": "Lidera as atividades práticas e simulações de combate, preparando os alunos para a realidade brutal fora dos muros da academia."
+    }
+  ],
+  "instrutores": [
+    { "nome": "Miharu Kagutsuchi", "materia": "Zanjutsu", "img": "../../img/docentes/MiharuKagutsuchi.png", "bio": "Mestre na arte da esgrima, Miharu foca na precisão do corte e na conexão espiritual com a Zanpakutō. Suas aulas são conhecidas pelo rigor físico e disciplina absoluta." },
+    { "nome": "Monjirou Takahashi", "materia": "Hakuda", "img": "../../img/docentes/MonjirouTakahashi.png", "bio": "Especialista em combate corpo a corpo. Monjirou ensina que um Ceifeiro de Almas nunca está desarmado enquanto possuir seu próprio corpo como ferramenta de combate." },
+    { "nome": "Yumeko Sai", "materia": "Hohō", "img": "../../img/docentes/YumekoSai.png", "bio": "Mestra da movimentação rápida e do Shunpo. Yumeko preza pela agilidade e furtividade, ensinando que a melhor defesa é nunca estar onde o inimigo golpeia." },
+    { "nome": "Akio Murasame", "materia": "Kidō", "img": "../../img/docentes/AkioMurasame.png", "bio": "Um acadêmico das artes demoníacas. Akio instrui os alunos na manipulação da pressão espiritual para conjurar feitiços de destruição e selamento com perfeição métrica." },
+    { "nome": "Monja Sokitsu", "materia": "Controle de Reiatsu", "img": "../../img/docentes/MonjaSokitsu.png", "bio": "Focada no equilíbrio interno, a Monja Sokitsu guia os alunos na difícil tarefa de suprimir ou liberar sua pressão espiritual de forma consciente e eficiente." },
+    { "nome": "Capy-Sensei", "materia": "História da Sociedade das Almas", "img": "../../img/docentes/CapySensei.png", "bio": "A alma mais sábia da academia. Capy-sensei narra as eras passadas e a fundação do Gotei 13, garantindo que o passado nunca seja esquecido pelos novos recrutas." },
+    { "nome": "Katsuji Shiraname", "materia": "Doutrina & Ética", "img": "../../img/docentes/Katsuji Shiraname.png", "bio": "Responsável por moldar o caráter dos futuros oficiais. Katsuji impõe os códigos de honra e a resiliência mental necessária para enfrentar os perigos do Hueco Mundo." },
+    { "nome": "Hanae Kuronami", "materia": "Psicologia", "img": "../../img/docentes/HanaeKurogane.png", "bio": "Atuando em conjunto com Katsuji, Hanae foca no bem-estar psicológico e no discernimento moral, preparando a mente das almas para o peso do dever." }
+  ]
+}

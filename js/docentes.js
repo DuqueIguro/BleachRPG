@@ -1,33 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetchDocentes();
+    fetch('../../data/docentes.json')
+        .then(response => response.json())
+        .then(data => {
+            renderDiretoria(data.diretoria);
+            renderInstrutores(data.instrutores);
+        })
+        .catch(err => console.error("Erro ao carregar dados:", err));
 });
 
-async function fetchDocentes() {
-    const grid = document.getElementById('docentes-grid');
+function renderDiretoria(diretoria) {
+    const container = document.getElementById('diretoria-section');
+    let html = `<h2 class="section-title" style="margin-top:20px;"><span class="marker">>></span> Alta Cúpula Administrativa</h2>`;
     
-    try {
-        const response = await fetch('../../data/docentes.json');
-        if (!response.ok) throw new Error("Erro ao carregar docentes");
-        const docentes = await response.json();
-
-        grid.innerHTML = '';
-
-        docentes.forEach(profe => {
-            const card = document.createElement('div');
-            card.className = 'docente-card';
-            card.innerHTML = `
-                <div class="docente-img-wrapper">
-                    <img src="${profe.imagem}" alt="${profe.nome}" onerror="this.src='../../img/Academia.png'">
+    diretoria.forEach(membro => {
+        html += `
+            <div class="diretor-row">
+                <img src="${membro.imagem}" class="diretor-img" alt="${membro.nome}">
+                <div class="diretor-info">
+                    <h3>${membro.nome}</h3>
+                    <span class="diretor-cargo">${membro.cargo}</span>
+                    <p class="diretor-desc">${membro.descricao}</p>
                 </div>
-                <div class="docente-info">
-                    <h2>${profe.nome}</h2>
-                    <span class="docente-materia">MATÉRIA: ${profe.materia}</span>
-                    <p class="docente-desc">${profe.descricao}</p>
+            </div>
+        `;
+    });
+    container.innerHTML = html;
+}
+
+function renderInstrutores(instrutores) {
+    const grid = document.getElementById('instrutores-grid');
+    grid.innerHTML = '';
+    
+    instrutores.forEach(profe => {
+        grid.innerHTML += `
+            <article class="instrutor-card">
+                <div class="instrutor-img-box">
+                    <img src="${profe.img}" alt="${profe.nome}" onerror="this.src='../../img/Academia.png'">
                 </div>
-            `;
-            grid.appendChild(card);
-        });
-    } catch (error) {
-        grid.innerHTML = `<p style="color: white;">Erro ao carregar o corpo docente no banco de dados da Seireitei.</p>`;
-    }
+                <div class="instrutor-info">
+                    <h3>${profe.nome}</h3>
+                    <span class="materia-tag">${profe.materia}</span>
+                    <p class="instrutor-bio">${profe.bio}</p>
+                </div>
+            </article>
+        `;
+    });
 }
