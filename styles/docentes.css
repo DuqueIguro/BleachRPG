@@ -1,0 +1,67 @@
+@import url('hubAcademia.css');
+
+.docentes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.docente-card {
+    border: 4px solid #ffffff;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 6px 6px 0px #d65a18;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.docente-card:hover {
+    transform: scale(1.02);
+    box-shadow: 10px 10px 0px #d65a18;
+}
+
+.docente-img-wrapper {
+    width: 100%;
+    height: 250px;
+    border-bottom: 4px solid #d65a18;
+    background: #111;
+}
+
+.docente-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.docente-info {
+    padding: 20px;
+}
+
+.docente-info h2 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.docente-materia {
+    color: #d65a18;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: block;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.docente-desc {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #ccc;
+    line-height: 1.4;
+    text-align: justify;
+}
