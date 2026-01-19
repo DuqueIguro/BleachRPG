@@ -85,9 +85,28 @@
     padding: 20px;
 }
 
-.instrutor-info h3 { font-size: 1.4rem; color: #fff; margin-bottom: 5px; }
-.materia-tag { color: #d65a18; font-family: 'Courier New', monospace; font-weight: bold; font-size: 0.9rem; margin-bottom: 10px; display: block; }
-.instrutor-bio { font-family: 'Courier New', monospace; font-size: 0.85rem; color: #aaa; line-height: 1.4; }
+.instrutor-info h3 { 
+    font-size: 1.4rem; 
+    color: #fff; 
+    margin-bottom: 5px; 
+}
+
+.materia-tag { 
+    color: #d65a18; 
+    font-family: 'Courier New', monospace; 
+    font-weight: bold; 
+    font-size: 0.9rem; 
+    margin-bottom: 10px; 
+    display: block; 
+}
+
+.instrutor-bio { 
+    font-family: 'Courier New', monospace; 
+    font-size: 0.85rem; 
+    color: #aaa; 
+    line-height: 1.4; 
+    text-align: justify;
+}
 
 @media (max-width: 768px) {
     .diretor-row { grid-template-columns: 1fr; }

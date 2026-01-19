@@ -5,6 +5,17 @@
     - ...
   ↳ docentes
     - ...
+  ↳ materias
+    ↳ kido
+      - hado.png
+      - bakudo.png
+      - kaido.png
+    ↳ zanpakuto
+      - asauchi.png
+      - zanpakuto.png
+      - shikai.png
+      - bankai.png
+    - ...
   - ...
 ↳ js
   - ...
@@ -14,6 +25,7 @@
   ↳ academia
     - boletim.html
     - docentes.html
+    - materias.html
   - gotei.html
   - ReiatsuInsuficiente.html
 ↳ styles

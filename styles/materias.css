@@ -1,0 +1,130 @@
+@import url('docentes.css');
+
+/* --- Estilos Específicos para Matérias --- */
+
+.section-divider {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #d65a18, transparent);
+    margin: 60px 0;
+}
+
+/* Ajuste no card para suportar sub-itens (Kidō) */
+.materia-sub {
+    margin-top: 15px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.kido-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.kido-item {
+    text-align: center;
+    flex: 1;
+}
+
+.kido-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #d65a18;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.kido-name {
+    display: block;
+    font-size: 0.7rem;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+}
+
+/* --- Seção Zanpakuto (Complementar) --- */
+.complementar-section {
+    text-align: center;
+}
+
+.complementar-section h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #d65a18;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    color: #aaa;
+    margin-bottom: 40px;
+    font-family: 'Courier New', monospace;
+}
+
+.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+
+/* Estilo dos Cards de Zanpakuto */
+.zan-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #555;
+    padding: 15px;
+    width: 280px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.zan-card:hover {
+    border-color: #fff;
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Conector visual entre as fases (seta) */
+.zan-card:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -33px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #d65a18;
+}
+
+@media (max-width: 900px) {
+    .zan-card:not(:last-child)::after {
+        content: "↓";
+        right: 50%;
+        top: 100%;
+        transform: translateX(50%);
+        right: auto;
+    }
+}
+
+.zan-img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 5px #d65a18);
+}
+
+.zan-title {
+    color: #d65a18;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.zan-desc {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: justify;
+}

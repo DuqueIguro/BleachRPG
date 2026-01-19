@@ -1,0 +1,99 @@
+{
+  "curriculo": [
+    {
+      "id": "zanjutsu",
+      "titulo": "Zanjutsu",
+      "professor": "Miharu Kagutsuchi",
+      "imagem": "../../img/materias/zanjutsu.png",
+      "descricao": "Zanjutsu é a disciplina dedicada ao uso técnico da Zanpakutō em combate. A matéria foca no domínio da lâmina como ferramenta física e espiritual, priorizando postura, leitura de combate e precisão."
+    },
+    {
+      "id": "hakuda",
+      "titulo": "Hakuda",
+      "professor": "Monjirou Takahashi",
+      "imagem": "../../img/materias/hakuda.png",
+      "descricao": "Hakuda é a disciplina de combate desarmado, focada no uso do próprio corpo como meio ofensivo e defensivo. Essencial em situações onde o uso da Zanpakutō é inviável."
+    },
+    {
+      "id": "hoho",
+      "titulo": "Hohō",
+      "professor": "Yumeko Sai",
+      "imagem": "../../img/materias/hoho.png",
+      "descricao": "Hohō é a disciplina responsável pela locomoção avançada através do uso de reiatsu. Desenvolve velocidade, posicionamento e capacidade de esquiva em ambientes de combate."
+    },
+    {
+      "id": "kido",
+      "titulo": "Kidō (Artes Demoníacas)",
+      "professor": "Akio Murasame",
+      "imagem": "../../img/materias/kido/bakudo.png", 
+      "descricao": "Kidō é a área de estudo dedicada à manipulação consciente da reiatsu por meio de fórmulas, foco mental e controle espiritual. A disciplina aborda os fundamentos teóricos e práticos que permitem ao Ceifeiro de Almas alterar o ambiente, afetar alvos e intervir em situações de combate ou suporte sem o uso direto da Zanpakutō.",
+      "caminhos": [
+        {
+          "nome": "Hadō (Caminho da Destruição)",
+          "imagem": "../../img/materias/kido/hado.png",
+          "desc": "Aplicações ofensivas do Kidō voltadas à liberação direta de energia espiritual para causar dano, romper defesas ou controlar o campo de batalha."
+        },
+        {
+          "nome": "Bakudō (Caminho do Aprisionamento)",
+          "imagem": "../../img/materias/kido/bakudo.png",
+          "desc": "Técnicas destinadas à imobilização, restrição, selamento e proteção, amplamente utilizadas para controle tático e captura de alvos."
+        },
+        {
+          "nome": "Kaidō (Caminho da Cura)",
+          "imagem": "../../img/materias/kido/kaido.png",
+          "desc": "Uso do Kidō para recuperação física e espiritual, estabilização de ferimentos e suporte a aliados em situações críticas."
+        }
+      ]
+    },
+    {
+      "id": "reiatsu",
+      "titulo": "Controle de Reiatsu",
+      "professor": "Monja Sokitsu",
+      "imagem": "../../img/materias/controleDeReiatsu.png",
+      "descricao": "Fundamentos da energia espiritual. Como suprimir, detectar e liberar poder de forma eficiente sem desperdício."
+    },
+    {
+      "id": "historia",
+      "titulo": "História da Soul Society",
+      "professor": "Capy-Sensei",
+      "imagem": "../../img/materias/historia.png",
+      "descricao": "Estudo da formação, estrutura e eventos históricos da Sociedade das Almas. A disciplina fornece contexto institucional e histórico para a atuação do Ceifeiro de Almas."
+    },
+    {
+      "id": "doutrina",
+      "titulo": "Doutrina & Conduta Militar",
+      "professor": "Katsuji Shiraname",
+      "imagem": "../../img/materias/doutrinaEConduta.png",
+      "descricao": "Disciplina voltada à compreensão da estrutura hierárquica e operacional da Sociedade das Almas. Forma a base de comportamento, disciplina e responsabilidade do Ceifeiro de Almas."
+    },
+    {
+      "id": "etica",
+      "titulo": "Ética e Psicologia",
+      "professor": "Katsuji Shiraname & Hanae Kuronami",
+      "imagem": "../../img/materias/eticaEPsicologia.png",
+      "descricao": "Aborda os impactos psicológicos e morais da atuação como Ceifeiro de Almas. Prepara o aluno para lidar com perdas, decisões irreversíveis e conflitos internos."
+    }
+  ],
+  "zanpakuto_info": [
+    {
+      "estagio": "Asauchi",
+      "imagem": "../../img/materias/zanpakuto/asauchi.png",
+      "desc": "Nas aulas de Zanjutsu os alunos aprenderão a dominar as técnicas da Zanpakutō, no entanto aprender a dominar a própria Zanpakutō é um desafio muito maior. A academia de ceifeiros de almas fornecerá para todos os estudantes uma  Asauchi, trata-se de uma espada sem nome, sem habilidades específicas e sem identidade própria. Sua função é servir como um receptáculo espiritual, capaz de absorver e registrar a Reiatsu de seu portador ao longo do tempo. A Asauchi não possui vontade própria nem características definidas até que seja moldada pela energia espiritual do Ceifeiro de Almas que o empunha."
+    },
+    {
+      "estagio": "Zanpakuto",
+      "imagem": "../../img/materias/zanpakuto/zanpakuto.png",
+      "desc": "A Zanpakutō é a arma espiritual de um Ceifeiro de Almas e representa a manifestação material de sua alma. Ela surge quando uma Asauchi absorve Reiatsu suficiente para adquirir identidade própria. A Zanpakutō não é uma entidade independente, mas uma extensão direta do Ceifeiro de Almas. Sua forma, natureza e capacidades estão diretamente ligadas à identidade espiritual de seu portador."
+    },
+    {
+      "estagio": "Shikai",
+      "imagem": "../../img/materias/zanpakuto/shikai.jpeg",
+      "desc": "A Shikai é o primeiro estágio de liberação de uma Zanpakutō. Ele ocorre quando o Ceifeiro de Almas reconhece o nome verdadeiro de sua lâmina e estabelece comunicação com seu Espírito. A Shikai representa a liberação parcial do poder da Zanpakutō, mantendo limitações naturais impostas pelo vínculo espiritual ainda incompleto."
+    },
+    {
+      "estagio": "Bankai",
+      "imagem": "../../img/materias/zanpakuto/bankai.png",
+      "desc": "O Bankai é o estágio final de liberação de uma Zanpakutō. Ele representa a manifestação total do poder da lâmina e da alma de seu portador. O Bankai exige a materialização completa do Espírito da Zanpakutō e o domínio pleno desse vínculo. Sua ativação resulta em um aumento massivo de poder e controle espiritual."
+    }
+  ]
+}
