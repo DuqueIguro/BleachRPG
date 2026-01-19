@@ -1,16 +1,41 @@
 {
   "avisos": [
     {
-      "data": "14/12",
-      "titulo": "Cerimônia de Entrada para novos estudantes ocorrerá no pátio principal."
+      "data": "13/12",
+      "titulo": "Palestra sobre a Academia de Ceifeiros de Almas para os interessados em ingressar na Academia."
     },
     {
-      "data": "12/12",
-      "titulo": "Uso de Shikai proibido nos corredores. Penalidade: Limpeza dos esgotos."
+      "data": "15/12",
+      "titulo": "Inicio do processo seletivo para os novos alunos do próximo semestre."
     },
     {
-      "data": "10/12",
-      "titulo": "Biblioteca fechada para manutenção de barreiras Kido."
+      "data": "19/12",
+      "titulo": "Encerramento das inscrições para o processo seletivo."
+    },
+    {
+      "data": "20/12",
+      "titulo": "Palestra sobre a Vice-Comandante da Força Secretra, Sukunah Shihoin."
+    },
+    {
+      "data": "21/12",
+      "titulo": "Divulgação dos resultados do processo seletivo e comunicado sobre prazo final para ajuste de documentos."
+    },
+    {
+      "data": "27/12",
+      "titulo": "Encerramento dos processos acadêmicos do semestre atual."
+    },
+    {
+      "data": "31/12",
+      "titulo": "Recesso e Férias de fim de ano da Academia de Ceifeiros de Almas."
+    },
+    {
+      "data": "06/02",
+      "titulo": "Início do novo semestre acadêmico na Academia de Ceifeiros de Almas."
+    },
+    {
+      "data": "06/02",
+      "titulo": "Ceriminônia de boas-vindas aos novos alunos ingressantes na Academia."
     }
+
   ]
 }

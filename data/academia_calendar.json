@@ -1,22 +1,16 @@
 {
   "aulas": [
     {
-      "dia": "XX/XX",
-      "horario": "19:00",
-      "materia": "Zanjutsu Básico",
-      "instrutor": "Miharu Kagutsuchi"
+      "dia": "06/02",
+      "horario": "01:40",
+      "materia": "Doutrina e Conduta Militar",
+      "instrutor": "Katsuji Shiraname"
     },
     {
-      "dia": "XX/XX",
-      "horario": "20:00",
-      "materia": "História da Soul Society",
-      "instrutor": "Capy-Sensei"
-    },
-    {
-      "dia": "XX/XX",
-      "horario": "18:30",
-      "materia": "Prática de Kido #1-10",
-      "instrutor": "Akio Murasame"
+      "dia": "06/02",
+      "horario": "02:40",
+      "materia": "Controle de Reaitsu",
+      "instrutor": "Monja Sokitsu"
     }
   ]
 }
