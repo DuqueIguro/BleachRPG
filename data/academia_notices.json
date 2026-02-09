@@ -1,41 +1,16 @@
 {
   "avisos": [
     {
-      "data": "13/12",
-      "titulo": "Palestra sobre a Academia de Ceifeiros de Almas para os interessados em ingressar na Academia."
-    },
-    {
-      "data": "15/12",
-      "titulo": "Inicio do processo seletivo para os novos alunos do próximo semestre."
-    },
-    {
-      "data": "19/12",
-      "titulo": "Encerramento das inscrições para o processo seletivo."
-    },
-    {
-      "data": "20/12",
-      "titulo": "Palestra sobre a Vice-Comandante da Força Secretra, Sukunah Shihoin."
-    },
-    {
-      "data": "21/12",
-      "titulo": "Divulgação dos resultados do processo seletivo e comunicado sobre prazo final para ajuste de documentos."
-    },
-    {
-      "data": "27/12",
-      "titulo": "Encerramento dos processos acadêmicos do semestre atual."
-    },
-    {
-      "data": "31/12",
-      "titulo": "Recesso e Férias de fim de ano da Academia de Ceifeiros de Almas."
-    },
-    {
       "data": "06/02",
       "titulo": "Início do novo semestre acadêmico na Academia de Ceifeiros de Almas."
     },
     {
       "data": "06/02",
       "titulo": "Ceriminônia de boas-vindas aos novos alunos ingressantes na Academia."
-    }
+    },
+    {
+      "data": "09/02",
+      "titulo": "Diposponibilização das notas de aula, de Doutrina e Conduta Militar e Controle de Reiatsu no sistema."}
 
   ]
 }

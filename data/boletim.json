@@ -3,14 +3,38 @@
     "gradeSystem": {
       "default": "一",
       "legend": {
-        "一": { "name": "Sem Nota", "value": "N/A" },
-        "五": { "name": "Sucesso Excelente", "value": 2 },
-        "六": { "name": "Sucesso Normal", "value": 1 },
-        "七": { "name": "Mediano", "value": 0 },
-        "八": { "name": "Falha", "value": -1 },
-        "九": { "name": "Falha Grave", "value": -2 },
-        "十": { "name": "Falha Sistêmica", "value": "BLOQUEIO" },
-        "解": { "name": "Mestre", "value": "Variável" }
+        "一": {
+          "name": "Sem Nota",
+          "value": "N/A"
+        },
+        "五": {
+          "name": "Sucesso Excelente",
+          "value": 2
+        },
+        "六": {
+          "name": "Sucesso Normal",
+          "value": 1
+        },
+        "七": {
+          "name": "Mediano",
+          "value": 0
+        },
+        "八": {
+          "name": "Falha",
+          "value": -1
+        },
+        "九": {
+          "name": "Falha Grave",
+          "value": -2
+        },
+        "十": {
+          "name": "Falha Sistêmica",
+          "value": "BLOQUEIO"
+        },
+        "解": {
+          "name": "Mestre",
+          "value": "Variável"
+        }
       }
     },
     "subjects": [
@@ -27,31 +51,45 @@
   "students": [
     {
       "name": "Duque Iguro",
-      "grades": {}
+      "grades": {
+        "Controle de Reiatsu": "五+",
+        "Doutrina & Conduta Militar": "五+"
+      }
     },
     {
       "name": "Kagura Shihoin",
-      "grades": {}
+      "grades": {
+        "Controle de Reiatsu": "六",
+        "Doutrina & Conduta Militar": "六-"
+      }
     },
     {
       "name": "Mizuki Yukihira",
-      "grades": {}
+      "grades": {
+        "Controle de Reiatsu": "八",
+        "Doutrina & Conduta Militar": "七"
+      }
     },
     {
       "name": "Nagisa Kurogane",
-      "grades": {}
+      "grades": {
+        "Controle de Reiatsu": "五-",
+        "Doutrina & Conduta Militar": "五+"
+      }
     },
     {
       "name": "Seshomaru",
-      "grades": {}
+      "grades": {
+        "Controle de Reiatsu": "九-",
+        "Doutrina & Conduta Militar": "九-"
+      }
     },
     {
       "name": "Shiryu Iguro",
-      "grades": {}
-    },
-    {
-      "name": "Placeholder(Fora do RPG)",
-      "grades": {"Zanjutsu": "五", "Hakuda": "六", "Hohō": "七", "Kidō": "八", "Controle de Reiatsu": "九", "História da Sociedade das Almas": "九", "Doutrina & Conduta Militar": "解", "Ética e Psicologia": "一" }
+      "grades": {
+        "Controle de Reiatsu": "七",
+        "Doutrina & Conduta Militar": "六"
+      }
     }
   ]
 }

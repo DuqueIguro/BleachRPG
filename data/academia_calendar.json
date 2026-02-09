@@ -1,16 +1,33 @@
 {
   "aulas": [
     {
-      "dia": "06/02",
-      "horario": "01:40",
+      "dia": "21/02",
+      "horario": "08:00 - 08:30",
       "materia": "Doutrina e Conduta Militar",
-      "instrutor": "Katsuji Shiraname"
+      "instrutor": "Monja Sokitsu"
     },
     {
-      "dia": "06/02",
-      "horario": "02:40",
-      "materia": "Controle de Reaitsu",
-      "instrutor": "Monja Sokitsu"
+      "dia": "21/02",
+      "horario": "08:30 - 09:00",
+      "materia": "Hohō",
+      "instrutor": "Yumeko Sai"
+    },
+    {
+      "dia": "21/02",
+      "horario": "09:00 - 10:00",
+      "materia": "Intervalo"
+    },
+    {
+      "dia": "21/02",
+      "horario": "10:00 - 10:30",
+      "materia": "Kidō",
+      "instrutor": "Akio Murasame"
+    },
+    {
+      "dia": "21/02",
+      "horario": "10:30 - 11:00",
+      "materia": "Hakuda",
+      "instrutor": "Monjirou Takahashi"
     }
   ]
 }
