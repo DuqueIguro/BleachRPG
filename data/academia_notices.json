@@ -1,16 +1,16 @@
 {
   "avisos": [
     {
-      "data": "06/02",
-      "titulo": "Início do novo semestre acadêmico na Academia de Ceifeiros de Almas."
+      "data": "Aviso aos alunos ingressantes:",
+      "titulo":"O horário do café da manhã na Academia ocorre diariamente das 05h às 08h. Após esse período, o refeitório permanece fechado até o horário do almoço."
     },
     {
-      "data": "06/02",
-      "titulo": "Ceriminônia de boas-vindas aos novos alunos ingressantes na Academia."
+      "data": "Logo Breve",
+      "titulo": "Será adicionado à plataforma da Academia um espaço exclusivo para download de atividades e apostilas enviadas pelos professores. Os materiais serão disponibilizados somente por esse meio. Mais informações serão comunicadas em breve."
     },
     {
       "data": "09/02",
-      "titulo": "Diposponibilização das notas de aula, de Doutrina e Conduta Militar e Controle de Reiatsu no sistema."}
-
+      "titulo": "Diposponibilização das notas de aula, no sistema. Acesse o sistema para conferir as notas de aula referentes às disciplinas do semestre atual."
+    }
   ]
 }
