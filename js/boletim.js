@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const grade = student.grades[subject] || defaultGrade;
                 
                 tdGrade.textContent = grade;
-                tdGrade.setAttribute('title', legend[grade] ? legend[grade].name : 'Desconhecido');
+                tdGrade.setAttribute('title',  'Pare de ser um fracassado e estude para melhorar essa nota'); // Tooltip para motivar o aluno
                 
                 // Estilização condicional baseada na nota (Opcional, mas útil visualmente)
                 if(grade === '十') tdGrade.style.color = 'red'; // Falha sistêmica
-                // if(grade === '五') tdGrade.style.color = '#d65a18'; // Excelente
+                // if(grade === '五+') tdGrade.style.color = '#d65a18'; // Excelente
 
                 tr.appendChild(tdGrade);
             });
