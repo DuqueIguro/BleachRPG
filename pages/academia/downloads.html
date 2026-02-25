@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Materiais - Academia Shin'ō</title>
+    <link rel="icon" type="image/x-icon" href="../../img/Bleach.ico">
+    <link rel="stylesheet" href="../../styles/downloads.css">
+</head>
+<body data-audio="../../data/audio/bleachTema2.mp3">
+    <div class="background-noise"></div>
+    <div class="main-wrapper">
+        <header class="academy-header">
+            <h1>Arquivos e Materiais</h1>
+            <div class="user-status">Acesso: <span style="color: #d65a18;">Estudante</span></div>
+        </header>
+
+        <section class="filter-section">
+            <span class="marker">>></span> Filtrar por Tipo:
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="trabalho">Trabalhos</button>
+                <button class="filter-btn" data-filter="revisao">Revisões</button>
+                <button class="filter-btn" data-filter="complementar">Complementar</button>
+            </div>
+        </section>
+
+        <main id="downloads-grid" class="instrutores-grid">
+            <p class="loading-text">Conectando ao banco de dados da Academia...</p>
+        </main>
+
+        <div class="nav-buttons">
+            <a href="../hubs/hubAcademia" class="nav-btn">Voltar ao Hub</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025-2026 SEREITEI. Repositório Oficial do Sistema de Ensino Espiritual.
+    </footer>
+
+    <script src="../../js/downloads.js"></script>
+    <script src="../../js/audioPlayer.js"></script>
+</body>
+</html>

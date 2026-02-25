@@ -1,0 +1,18 @@
+[
+    {
+        "titulo": "História das 13 Divisões",
+        "tipo": "complementar",
+        "materia": "História",
+        "professor": "Capy-Sensei",
+        "descricao": "Resumo detalhado sobre a fundação do Gotei 13.",
+        "arquivo": "../../data/pdf/historia_gotei.pdf"
+    },
+    {
+        "titulo": "Prática de Bakudo #1-10",
+        "tipo": "trabalho",
+        "materia": "Kido",
+        "professor": "Akio Murasame",
+        "descricao": "Trabalho prático sobre selamento básico.",
+        "arquivo": "../../data/pdf/trabalho_bakudo.pdf"
+    }
+]

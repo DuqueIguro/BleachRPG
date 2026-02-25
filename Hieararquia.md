@@ -10,9 +10,11 @@ BleachRPG
 │  ├─ boletim.json
 │  ├─ boletimPlacheholder.json
 │  ├─ docentes.json
+│  ├─ downloads.json
 │  ├─ gotei.json
-│  ├─ hierarquiaDePastas.txt
-│  └─ materias.json
+│  ├─ materias.json
+│  └─ pdf
+├─ Hieararquia.md
 ├─ img
 │  ├─ Academia.png
 │  ├─ Bleach.ico
@@ -77,8 +79,10 @@ BleachRPG
 │        └─ zanpakuto.png
 ├─ index.html
 ├─ js
+│  ├─ audioPlayer.js
 │  ├─ boletim.js
 │  ├─ docentes.js
+│  ├─ downloads.js
 │  ├─ gotei.js
 │  ├─ hubAcademia.js
 │  ├─ index.js
@@ -87,6 +91,7 @@ BleachRPG
 │  ├─ academia
 │  │  ├─ boletim.html
 │  │  ├─ docentes.html
+│  │  ├─ downloads.html
 │  │  └─ materias.html
 │  ├─ gotei.html
 │  ├─ hubs
@@ -95,6 +100,7 @@ BleachRPG
 └─ styles
    ├─ boletim.css
    ├─ docentes.css
+   ├─ downloads.css
    ├─ gotei.css
    ├─ hubAcademia.css
    ├─ index.css

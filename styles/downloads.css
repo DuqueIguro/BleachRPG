@@ -1,0 +1,57 @@
+@import url('hubAcademia.css');
+@import url('docentes.css');
+
+.filter-section {
+    margin-bottom: 30px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #fff;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    color: #888;
+    border: 2px solid #333;
+    padding: 8px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    border-color: #d65a18;
+    color: #fff;
+    background: #1a0a00;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: 2px solid #fff;
+    clip-path: polygon(5% 0, 100% 0, 100% 70%, 95% 100%, 0 100%, 0 30%);
+}
+
+.btn-trabalho { background: #fff; color: #000; }
+.btn-revisao { background: #d65a18; color: #fff; border-color: #d65a18; }
+.btn-complementar { background: transparent; color: #fff; border-color: #555; }
+
+.download-btn:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
