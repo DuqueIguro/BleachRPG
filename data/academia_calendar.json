@@ -1,28 +1,70 @@
 {
   "aulas": [
     {
-      "dia": "21/02",
+      "dia": "27/02",
       "horario": "08:00 - 08:30",
-      "materia": "Controle de Reiatsu",
+      "materia": "Reposição - Controle de Reiatsu",
       "instrutor": "Monja Sokitsu"
     },
     {
-      "dia": "21/02",
+      "dia": "27/02",
       "horario": "08:30 - 09:00",
-      "materia": "Hohō",
+      "materia": "Reposição - Hohō",
       "instrutor": "Yumeko Sai"
     },
     {
-      "dia": "21/02",
-      "horario": "10:00 - 10:30",
+      "dia": "27/02",
+      "horario": "09:00 - 09:30",
+      "materia": "Intervalo",
+      "instrutor": "一"
+    },
+    {
+      "dia": "27/02",
+      "horario": "09:30 - 10:00",
+      "materia": "Hakuda",
+      "instrutor": "Monjirou Takahashi"
+    },
+    {
+      "dia": "27/02",
+      "horario": "10:30 - 11:00",
       "materia": "Kidō",
       "instrutor": "Akio Murasame"
     },
     {
-      "dia": "21/02",
-      "horario": "10:30 - 11:00",
+      "dia": "27/02",
+      "horario": "11:00 - 11:30",
+      "materia": "Zanjutsu",
+      "instrutor": "Miharu Kagutsuchi"
+    },
+    {
+      "dia": "28/02",
+      "horario": "08:00 - 08:30",
+      "materia": "Zanjutsu",
+      "instrutor": "Miharu Kagutsuchi"
+    },
+    {
+      "dia": "28/02",
+      "horario": "08:30 - 09:00",
       "materia": "Hakuda",
       "instrutor": "Monjirou Takahashi"
+    },
+    {
+      "dia": "28/02",
+      "horario": "09:00 - 09:30",
+      "materia": "Intervalo",
+      "instrutor": "一"
+    },
+    {
+      "dia": "28/02",
+      "horario": "09:30 - 10:00",
+      "materia": "Hohō",
+      "instrutor": "Yumeko Sai"
+    },
+    {
+      "dia": "28/02",
+      "horario": "10:00 - 11:30",
+      "materia": "Provas Teóricas",
+      "instrutor": "一"
     }
   ]
 }

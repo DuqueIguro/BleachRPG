@@ -1,18 +1,35 @@
 [
     {
-        "titulo": "História das 13 Divisões",
+        "titulo": "Manual de Psicologia e Etica para Ceifeiros de Almas",
         "tipo": "complementar",
-        "materia": "História",
-        "professor": "Capy-Sensei",
-        "descricao": "Resumo detalhado sobre a fundação do Gotei 13.",
-        "arquivo": "../../data/pdf/historia_gotei.pdf"
+        "materia": "Ética e Psicologia",
+        "professor": "Hanae Kurogane",
+        "descricao": "Este manual aborda os fundamentos éticos e psicológicos essenciais para a formação de um Ceifeiro de Almas. Explora temas como a moralidade no combate, o impacto psicológico das batalhas e estratégias para manter a saúde mental em situações de alta pressão.",
+        "arquivo": "../../data/pdf/ManualPsicologiaEtica.pdf"
     },
     {
-        "titulo": "Prática de Bakudo #1-10",
+        "titulo": "Manual de Psicologia e Etica para Ceifeiros de Almas 02",
+        "tipo": "complementar",
+        "materia": "Ética e Psicologia",
+        "professor": "Hanae Kurogane",
+        "descricao": "A continuação do manual anterior, este volume aprofunda-se em casos práticos e dilemas éticos enfrentados por Ceifeiros de Almas. Inclui análises de situações reais, exercícios de reflexão e orientações para o desenvolvimento de resiliência mental e ética profissional.",
+        "arquivo": "../../data/pdf/ManualPsicologiaEtica02.pdf"
+    },
+    {
+        "titulo": "Manual Introdutório Das Guardas da Corte",
+        "tipo": "revisão",
+        "materia": "Doutrina & Conduta Militar",
+        "professor": "Katsuji Shiraname",
+        "descricao": "Este manual serve como uma introdução às doutrinas e condutas militares específicas das Guardas da Corte Real. Ele aborda os princípios de lealdade, disciplina e estratégia que regem as ações dos membros dessa elite, além de fornecer orientações sobre a conduta esperada em missões de proteção e combate.",
+        "arquivo": "../../data/pdf/ManualIntrodutorioGuardasCorte.pdf"
+    },
+    {
+        "titulo": "Trabalho Geral - Parecer Técnico de Avaliação",
         "tipo": "trabalho",
-        "materia": "Kido",
-        "professor": "Akio Murasame",
-        "descricao": "Trabalho prático sobre selamento básico.",
-        "arquivo": "../../data/pdf/trabalho_bakudo.pdf"
+        "materia": "Doutrina, Conduta Militar, Psicologia",
+        "professor": "Katsuji Shiraname & Hanae Kurogane",
+        "descricao": "Você deve redigir um Parecer Técnico de Avaliação (mínimo de 60 linhas) analisando a conduta do Cadete T.S. fundamentando-se nos Manuais Oficiais.",
+        "arquivo": "../../data/pdf/ManualEstrategiasCombate.pdf"
     }
+
 ]
