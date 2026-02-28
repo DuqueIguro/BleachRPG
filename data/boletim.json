@@ -39,7 +39,11 @@
         },
         "解": {
           "name": "Mestre",
-          "value": "Variável"
+          "value": "Variável Positivo"
+        },
+        "愛": {
+          "name": "Mestre",
+          "value": "Variável Negativo"
         }
       }
     },
@@ -59,10 +63,10 @@
       "name": "Duque Iguro",
       "grades": {
         "Zanjutsu": "一",
-        "Hakuda": "一",
-        "Hohō": "五",
-        "Kidō": "一",
-        "Controle de Reiatsu": "五+, 五",
+        "Hakuda": "五+",
+        "Hohō": "五+",
+        "Kidō": "五+",
+        "Controle de Reiatsu": "五+, 五+, 解",
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "五+",
         "Ética e Psicologia": "一"
@@ -72,10 +76,10 @@
       "name": "Kagura Shihoin",
       "grades": {
         "Zanjutsu": "一",
-        "Hakuda": "一",
-        "Hohō": "九p",
-        "Kidō": "一",
-        "Controle de Reiatsu": "六, 九p",
+        "Hakuda": "五-",
+        "Hohō": "五+",
+        "Kidō": "五+",
+        "Controle de Reiatsu": "六, 六, 解",
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "六-",
         "Ética e Psicologia": "一"
@@ -85,10 +89,10 @@
       "name": "Mizuki Yukihira",
       "grades": {
         "Zanjutsu": "一",
-        "Hakuda": "一",
-        "Hohō": "九p",
+        "Hakuda": "六",
+        "Hohō": "五-",
         "Kidō": "一",
-        "Controle de Reiatsu": "八, 九p",
+        "Controle de Reiatsu": "八, 五-",
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "七",
         "Ética e Psicologia": "一"
@@ -98,10 +102,10 @@
       "name": "Nagisa Kurogane",
       "grades": {
         "Zanjutsu": "一",
-        "Hakuda": "一",
-        "Hohō": "六",
-        "Kidō": "一",
-        "Controle de Reiatsu": "五-, 五",
+        "Hakuda": "七+",
+        "Hohō": "六+",
+        "Kidō": "六+",
+        "Controle de Reiatsu": "五-, 五-, 解",
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "五+",
         "Ética e Psicologia": "一"
@@ -111,10 +115,10 @@
       "name": "Seshomaru",
       "grades": {
         "Zanjutsu": "一",
-        "Hakuda": "一",
-        "Hohō": "九p",
-        "Kidō": "一",
-        "Controle de Reiatsu": "九-, 九p",
+        "Hakuda": "七-",
+        "Hohō": "五-",
+        "Kidō": "六-",
+        "Controle de Reiatsu": "九-, 六-, 十",
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "九-",
         "Ética e Psicologia": "一"
@@ -124,10 +128,10 @@
       "name": "Shiryu Iguro",
       "grades": {
         "Zanjutsu": "一",
-        "Hakuda": "一",
-        "Hohō": "六",
-        "Kidō": "一",
-        "Controle de Reiatsu": "七, 七",
+        "Hakuda": "六",
+        "Hohō": "六+",
+        "Kidō": "五+",
+        "Controle de Reiatsu": "七, 七-, 解",
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "六",
         "Ética e Psicologia": "一"

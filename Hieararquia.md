@@ -14,6 +14,15 @@ BleachRPG
 │  ├─ gotei.json
 │  ├─ materias.json
 │  └─ pdf
+│     ├─ ApostilaDeRevisaoControleDeReiatsu.pdf
+│     ├─ ApostilaDeRevisaoHakuda.pdf
+│     ├─ ApostilaDeRevisaoHoho.pdf
+│     ├─ ApostilaDeRevisaoKido.pdf
+│     ├─ ApostilaDeRevisaoZanjutsu.pdf
+│     ├─ ManualIntrodutorioGuardasCorte.pdf
+│     ├─ ManualPsicologiaEtica.pdf
+│     ├─ ManualPsicologiaEtica02.pdf
+│     └─ TrabalhoGeral.pdf
 ├─ Hieararquia.md
 ├─ img
 │  ├─ Academia.png

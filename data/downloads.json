@@ -30,6 +30,46 @@
         "professor": "Katsuji Shiraname & Hanae Kurogane",
         "descricao": "Você deve redigir um Parecer Técnico de Avaliação (mínimo de 60 linhas) analisando a conduta do Cadete T.S. fundamentando-se nos Manuais Oficiais.",
         "arquivo": "../../data/pdf/TrabalhoGeral.pdf"
+    },
+    {
+        "titulo": "Apostila de Revisão - Hakuda",
+        "tipo": "revisão",
+        "materia": "Hakuda",
+        "professor": "Monjirou Takahashi",
+        "descricao": "Este manual apresenta os fundamentos e técnicas básicas de Hakuda, incluindo posturas, golpes e estratégias de combate corpo a corpo, preparando os alunos para enfrentar adversários sem o uso de armas.",
+        "arquivo": "../../data/pdf/ApostilaDeRevisaoHakuda.pdf"
+    },
+    {
+        "titulo": "Apostila de Revisão - Kidō",
+        "tipo": "revisão",
+        "materia": "Kidō",
+        "professor": "Akio Murasame",
+        "descricao": "Este manual cobre os fundamentos e técnicas básicas de Kidō, a arte de manipulação espiritual. Ele inclui instruções detalhadas sobre a conjuração de feitiços, a manipulação de reiatsu e estratégias para o uso eficaz de Kidō em combate.",
+        "arquivo": "../../data/pdf/ApostilaDeRevisaoKido.pdf"
+    },
+    {
+        "titulo": "Apostila de Revisão - Hohō",
+        "tipo": "revisão",
+        "materia": "Hohō",
+        "professor": "Yumeko Sai",
+        "descricao": "Este manual apresenta os fundamentos e técnicas básicas de Hohō, a arte da movimentação rápida. Ele inclui instruções sobre posturas, e estratégias para melhorar a agilidade e a evasão durante o combate.",
+        "arquivo": "../../data/pdf/ApostilaDeRevisaoHoho.pdf"
+    },
+    {
+        "titulo": "Apostila de Revisão - Zanjutsu",
+        "tipo": "revisão",
+        "materia": "Zanjutsu",
+        "professor": "Miharu Kagutsuchi",
+        "descricao": "Este manual cobre os fundamentos e técnicas básicas de Zanjutsu, a arte da esgrima. Ele inclui instruções detalhadas sobre posturas, golpes e estratégias para aprimorar a precisão e a eficácia no uso da Zanpakutō em combate.",
+        "arquivo": "../../data/pdf/ApostilaDeRevisaoZanjutsu.pdf"
+    },
+    {
+        "titulo": "Apostila de Revisão - Controle de Reiatsu",
+        "tipo": "revisão",
+        "materia": "Controle de Reiatsu",
+        "professor": "Monja Sokitsu",
+        "descricao": "Este manual apresenta os fundamentos e técnicas básicas de Controle de Reiatsu, incluindo a identificação e manipulação do reiatsu individual e coletivo. Ele detalha os métodos para aumentar o poder de reiatsu, controlar a energia espiritual e aplicar técnicas de controle em situações de combate.",
+        "arquivo": "../../data/pdf/ApostilaDeRevisaoControleDeReiatsu.pdf"
     }
 
 ]

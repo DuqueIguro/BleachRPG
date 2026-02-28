@@ -52,9 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 tdGrade.setAttribute('title',  'Pare de ser um fracassado e estude para melhorar essa nota'); // Tooltip para motivar o aluno
                 
                 // Estilização condicional baseada na nota (Opcional, mas útil visualmente)
-                if(grade === '十') tdGrade.style.color = 'red'; // Falha sistêmica
-                // if(grade === '五+') tdGrade.style.color = '#d65a18'; // Excelente
-
+                const gradeText = grade.toString();
+                if(gradeText.includes('十')) {
+                    tdGrade.innerHTML = gradeText.replace('十', '<span style="color:red;">十</span>'); // Falha Sistemica
+                }
+                if(gradeText.includes('解')) {
+                    tdGrade.innerHTML = gradeText.replace('解', '<span style="color:#d65a18;">解</span>'); // Variável Positivo
+                }
+                if(gradeText.includes('愛')) {
+                    tdGrade.innerHTML = gradeText.replace('愛', '<span style="color:#4f0909;">愛</span>'); // Variável Negativo
+                }
                 tr.appendChild(tdGrade);
             });
 
