@@ -62,8 +62,8 @@
     {
       "name": "Duque Iguro",
       "grades": {
-        "Zanjutsu": "一",
-        "Hakuda": "五+",
+        "Zanjutsu": "五+",
+        "Hakuda": "五+, 五+",
         "Hohō": "五+",
         "Kidō": "五+",
         "Controle de Reiatsu": "五+, 五+, 解",
@@ -75,8 +75,8 @@
     {
       "name": "Kagura Shihoin",
       "grades": {
-        "Zanjutsu": "一",
-        "Hakuda": "五-",
+        "Zanjutsu": "五+",
+        "Hakuda": "五-, 五+",
         "Hohō": "五+",
         "Kidō": "五+",
         "Controle de Reiatsu": "六, 六, 解",
@@ -88,8 +88,8 @@
     {
       "name": "Mizuki Yukihira",
       "grades": {
-        "Zanjutsu": "一",
-        "Hakuda": "六",
+        "Zanjutsu": "六-",
+        "Hakuda": "六, 六-",
         "Hohō": "五-",
         "Kidō": "一",
         "Controle de Reiatsu": "八, 五-",
@@ -114,8 +114,8 @@
     {
       "name": "Seshomaru",
       "grades": {
-        "Zanjutsu": "一",
-        "Hakuda": "七-",
+        "Zanjutsu": "六",
+        "Hakuda": "七-, 六",
         "Hohō": "五-",
         "Kidō": "六-",
         "Controle de Reiatsu": "九-, 六-, 十",
@@ -127,8 +127,8 @@
     {
       "name": "Shiryu Iguro",
       "grades": {
-        "Zanjutsu": "一",
-        "Hakuda": "六",
+        "Zanjutsu": "五+",
+        "Hakuda": "六, 六-",
         "Hohō": "六+",
         "Kidō": "五+",
         "Controle de Reiatsu": "七, 七-, 解",
