@@ -8,6 +8,7 @@ BleachRPG
 │  │  ├─ bleachTema.mp3
 │  │  └─ bleachTema2.mp3
 │  ├─ boletim.json
+│  ├─ boletimMedias.json
 │  ├─ boletimPlacheholder.json
 │  ├─ docentes.json
 │  ├─ downloads.json
@@ -90,6 +91,7 @@ BleachRPG
 ├─ js
 │  ├─ audioPlayer.js
 │  ├─ boletim.js
+│  ├─ boletimMedias.js
 │  ├─ docentes.js
 │  ├─ downloads.js
 │  ├─ gotei.js
@@ -99,6 +101,7 @@ BleachRPG
 ├─ pages
 │  ├─ academia
 │  │  ├─ boletim.html
+│  │  ├─ boletimMedias.html
 │  │  ├─ docentes.html
 │  │  ├─ downloads.html
 │  │  └─ materias.html

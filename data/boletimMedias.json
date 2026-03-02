@@ -1,0 +1,187 @@
+{
+  "config": {
+    "gradeSystem": {
+      "default": "一",
+      "legend": {
+        "4": {
+          "name": "(4) Nota Maxima P/T/R",
+          "value": "N/A"
+        },
+        "3": {
+          "name": "(3) Nota Razoável P/T/R",
+          "value": "N/A"
+        },
+        "2": {
+          "name": "(2) Nota P/T/R",
+          "value": "Reprovada"
+        },
+        "1": {
+          "name": "(1) Nota Minima P/T/R",
+          "value": "Reprovada"
+        },
+        "0": {
+          "name": "(0) Nota Minima P/T/R",
+          "value": "Reprovada"
+        },
+        "-1": {
+          "name": "(-1) Nota de Indiligência P/T/R",
+          "value": "Reprovada"
+        },
+        "一": {
+          "name": "Sem Nota",
+          "value": "N/A"
+        },
+        "二": {
+          "name": "Muito Ruim(0-2)",
+          "value": "0-2"
+        },
+        "三": {
+          "name": "Ruim(3)",
+          "value": "3"
+        },
+        "四": {
+          "name": "Falho(4)",
+          "value": "4"
+        },
+        "五": {
+          "name": "Abaixo da Média(5)",
+          "value": "5"
+        },
+        "六": {
+          "name": "Regular(6)",
+          "value": "6"
+        },
+        "七": {
+          "name": "Bom(7)",
+          "value": "7"
+        },
+        "八": {
+          "name": "Excelente(8)",
+          "value": "8"
+        },
+        "九": {
+          "name": "Excepcional(9)",
+          "value": "9"
+        },
+        "十": {
+          "name": "Perfeito(10)",
+          "value": "10"
+        }
+      }
+    },
+    "subjects": [
+      "Prova",
+      "Trabalho",
+      "Recuperação",
+      "Zanjutsu",
+      "Hakuda",
+      "Hohō",
+      "Kidō",
+      "Controle de Reiatsu",
+      "História da Sociedade das Almas",
+      "Doutrina & Conduta Militar",
+      "Ética e Psicologia",
+      "Classe"
+    ]
+  },
+  "students": [
+    {
+      "name": "Duque Iguro",
+      "grades": {
+        "Prova": "4",
+        "Trabalho": "4",
+        "Recuperação": "N/A",
+        "Zanjutsu": "十",
+        "Hakuda": "十",
+        "Hohō": "十",
+        "Kidō": "十",
+        "Controle de Reiatsu": "十",
+        "História da Sociedade das Almas": "一",
+        "Doutrina & Conduta Militar": "十",
+        "Ética e Psicologia": "一",
+        "Classe": "Regular"
+      }
+    },
+    {
+      "name": "Kagura Shihoin",
+      "grades": {
+        "Prova": "1",
+        "Trabalho": "3",
+        "Recuperação": "一",
+        "Zanjutsu": "六",
+        "Hakuda": "六",
+        "Hohō": "六",
+        "Kidō": "六",
+        "Controle de Reiatsu": "六",
+        "História da Sociedade das Almas": "一",
+        "Doutrina & Conduta Militar": "五+",
+        "Ética e Psicologia": "一",
+        "Classe": "Regular"
+      }
+    },
+    {
+      "name": "Mizuki Yukihira",
+      "grades": {
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Recuperação": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
+        "História da Sociedade das Almas": "一",
+        "Doutrina & Conduta Militar": "一",
+        "Ética e Psicologia": "一",
+        "Classe": "Reprovada"
+      }
+    },
+    {
+      "name": "Nagisa Kurogane",
+      "grades": {
+        "Prova": "4",
+        "Trabalho": "-1",
+        "Recuperação": "一",
+        "Zanjutsu": "一",
+        "Hakuda": "三",
+        "Hohō": "四",
+        "Kidō": "四",
+        "Controle de Reiatsu": "五",
+        "História da Sociedade das Almas": "一",
+        "Doutrina & Conduta Militar": "五",
+        "Ética e Psicologia": "一",
+        "Classe": "Regular"
+      }
+    },
+    {
+      "name": "Seshomaru",
+      "grades": {
+        "Prova": "4",
+        "Trabalho": "2",
+        "Recuperação": "N/A",
+        "Zanjutsu": "七",
+        "Hakuda": "七",
+        "Hohō": "八",
+        "Kidō": "七",
+        "Controle de Reiatsu": "七",
+        "História da Sociedade das Almas": "一",
+        "Doutrina & Conduta Militar": "六",
+        "Ética e Psicologia": "一",
+        "Classe": "Regular"
+      }
+    },
+    {
+      "name": "Shiryu Iguro",
+      "grades": {
+        "Recuperação": "N/A",
+        "Zanjutsu": "十",
+        "Hakuda": "九",
+        "Hohō": "九",
+        "Kidō": "十",
+        "Controle de Reiatsu": "九",
+        "História da Sociedade das Almas": "一",
+        "Doutrina & Conduta Militar": "九",
+        "Ética e Psicologia": "一",
+        "Classe": "Avançada"
+      }
+    }
+  ]
+}
