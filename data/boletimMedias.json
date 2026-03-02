@@ -122,14 +122,16 @@
     {
       "name": "Mizuki Yukihira",
       "grades": {
-        "Zanjutsu": "一",
-        "Hakuda": "一",
+        "Prova": "0",
+        "Trabalho": "-1",
+        "Zanjutsu": "二",
+        "Hakuda": "二",
         "Recuperação": "一",
-        "Hohō": "一",
-        "Kidō": "一",
-        "Controle de Reiatsu": "一",
+        "Hohō": "二",
+        "Kidō": "二",
+        "Controle de Reiatsu": "二",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "一",
+        "Doutrina & Conduta Militar": "二",
         "Ética e Psicologia": "一",
         "Classe": "Regular"
       }
