@@ -1,10 +1,16 @@
 {
   "aulas": [
     {
-      "dia": "Indeterminado",
-      "horario": "Indeterminado",
-      "materia": "Indeterminado",
-      "instrutor": "Indeterminado",
+      "dia": "13/03",
+      "horario": "08:00 - 8:30",
+      "materia": "Hakuda - Reposição",
+      "instrutor": "Monjirou Takahashi"
+    },
+    {
+      "dia": "14/03",
+      "horario": "08:30 - 9:30",
+      "materia": "Zanjutsu - Reposição",
+      "instrutor": "Miharu Kagutsuchi"
     }
   ]
 }
