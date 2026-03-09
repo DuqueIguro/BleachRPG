@@ -62,39 +62,39 @@
     {
       "name": "Duque Iguro",
       "grades": {
-        "Zanjutsu": "五+",
-        "Hakuda": "五+, 五+",
-        "Hohō": "五+",
-        "Kidō": "五+",
-        "Controle de Reiatsu": "五+, 五+, 解",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "五+",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一"
       }
     },
     {
       "name": "Kagura Shihoin",
       "grades": {
-        "Zanjutsu": "五+",
-        "Hakuda": "五-, 五+",
-        "Hohō": "五+",
-        "Kidō": "五+",
-        "Controle de Reiatsu": "六, 六, 解",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "六-",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一"
       }
     },
     {
       "name": "Mizuki Yukihira",
       "grades": {
-        "Zanjutsu": "六-",
-        "Hakuda": "六, 六-",
-        "Hohō": "五-",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
         "Kidō": "一",
-        "Controle de Reiatsu": "八, 五-",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "七",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一"
       }
     },
@@ -102,38 +102,38 @@
       "name": "Nagisa Kurogane",
       "grades": {
         "Zanjutsu": "一",
-        "Hakuda": "七+",
-        "Hohō": "六+",
-        "Kidō": "六+",
-        "Controle de Reiatsu": "五-, 五-, 解",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "五+",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一"
       }
     },
     {
       "name": "Seshomaru",
       "grades": {
-        "Zanjutsu": "六",
-        "Hakuda": "七-, 六",
-        "Hohō": "五-",
-        "Kidō": "六-",
-        "Controle de Reiatsu": "九-, 六-, 十",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "九-",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一"
       }
     },
     {
       "name": "Shiryu Iguro",
       "grades": {
-        "Zanjutsu": "五+",
-        "Hakuda": "六, 六-",
-        "Hohō": "六+",
-        "Kidō": "五+",
-        "Controle de Reiatsu": "七, 七-, 解",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "六",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一"
       }
     }

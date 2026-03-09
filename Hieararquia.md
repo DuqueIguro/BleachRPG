@@ -117,5 +117,4 @@ BleachRPG
    ├─ hubAcademia.css
    ├─ index.css
    └─ materias.css
-
 ```

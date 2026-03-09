@@ -7,10 +7,46 @@
       "instrutor": "Monjirou Takahashi"
     },
     {
-      "dia": "14/03",
+      "dia": "13/03",
       "horario": "08:30 - 9:30",
       "materia": "Zanjutsu - Reposição",
       "instrutor": "Miharu Kagutsuchi"
+    },
+    {
+      "dia": "13/03",
+      "horario": "10:00 - 12:00",
+      "materia": "Prova da classe avançada para acesso ao Capitão de Aprimoramento",
+      "instrutor": "Academia"
+    },
+    {
+      "dia": "03/04",
+      "horario": "08:00 - 8:30",
+      "materia": "História da Sociedade das Almas",
+      "instrutor": "Capy-Sensei"
+    },
+    {
+      "dia": "03/04",
+      "horario": "08:30 - 9:00",
+      "materia": "Ética e Psicologia",
+      "instrutor": "Katsuji Shiraname & Hanae Kurogane"
+    },
+    {
+      "dia": "03/04",
+      "horario": "09:00 - 09:30",
+      "materia": "Intervalo",
+      "instrutor": "一"
+    },
+    {
+      "dia": "03/04",
+      "horario": "09:30 - 10:00",
+      "materia": "Zanjutsu - Classe Avançada",
+      "instrutor": "Miharu Kagutsuchi"
+    },
+    {
+      "dia": "03/04",
+      "horario": "09:30 - 10:00",
+      "materia": "Kido - Classe Avançada",
+      "instrutor": "Akio Murasame"
     }
   ]
 }

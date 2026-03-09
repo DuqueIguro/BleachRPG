@@ -66,6 +66,10 @@
         "十": {
           "name": "Perfeito(10)",
           "value": "10"
+        },
+        "p": {
+          "name": "Provisória",
+          "value": "N/A"
         }
       }
     },
@@ -99,22 +103,22 @@
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "十",
         "Ética e Psicologia": "一",
-        "Classe": "Regular"
+        "Classe": "Avançada"
       }
     },
     {
       "name": "Kagura Shihoin",
       "grades": {
-        "Prova": "1",
+        "Prova": "N/A",
         "Trabalho": "3",
-        "Recuperação": "一",
-        "Zanjutsu": "六",
-        "Hakuda": "六",
-        "Hohō": "六",
-        "Kidō": "六",
-        "Controle de Reiatsu": "六",
+        "Recuperação": "4",
+        "Zanjutsu": "九",
+        "Hakuda": "九",
+        "Hohō": "九",
+        "Kidō": "九",
+        "Controle de Reiatsu": "八",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "五+",
+        "Doutrina & Conduta Militar": "八",
         "Ética e Psicologia": "一",
         "Classe": "Regular"
       }
@@ -133,22 +137,22 @@
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "二",
         "Ética e Psicologia": "一",
-        "Classe": "Regular"
+        "Classe": "Reprovada"
       }
     },
     {
       "name": "Nagisa Kurogane",
       "grades": {
         "Prova": "4",
-        "Trabalho": "-1",
-        "Recuperação": "一",
-        "Zanjutsu": "一",
-        "Hakuda": "三",
-        "Hohō": "四",
-        "Kidō": "四",
-        "Controle de Reiatsu": "五",
+        "Trabalho": "N/A",
+        "Recuperação": "3",
+        "Zanjutsu": "七p",
+        "Hakuda": "七",
+        "Hohō": "八",
+        "Kidō": "八",
+        "Controle de Reiatsu": "九",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "五",
+        "Doutrina & Conduta Militar": "九",
         "Ética e Psicologia": "一",
         "Classe": "Regular"
       }
@@ -184,7 +188,7 @@
         "História da Sociedade das Almas": "一",
         "Doutrina & Conduta Militar": "九",
         "Ética e Psicologia": "一",
-        "Classe": "Regular"
+        "Classe": "Avançada"
       }
     }
   ]
