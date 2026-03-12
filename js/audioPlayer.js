@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const player = new Audio(rootPath + audioSrc);
         player.loop = audioLoop;
-        player.volume = 0.5;
+        player.volume = 0.4; // Volume inicial
 
         // 2. Tentativa de Autoplay com tratamento de erro
         const startAudio = () => {
