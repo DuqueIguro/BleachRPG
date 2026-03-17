@@ -4,35 +4,35 @@
             "nome": "Duque Iguro",
             "matricula": "967312",
             "senha": "80615294",
-            "foto": "../../img/ceifeiros/duqueIguro.png",
+            "foto": "../../img/alunos/duqueIguro.png",
             "perfil": "../../pages/academia/alunos/DI-967312.html"
         },
         {
             "nome": "Kagura Shihoin",
             "matricula": "735204",
             "senha": "18496372",
-            "foto": "../../img/ceifeiros/kaguraShihoin.jpg",
+            "foto": "../../img/alunos/kaguraShihoin.png",
             "perfil": "../../pages/academia/alunos/KS-735204.html"
         },
         {
             "nome": "Nagisa Kurogane",
             "matricula": "619843",
             "senha": "56029184",
-            "foto": "../../img/ceifeiros/NagisaKurogane.png",
+            "foto": "../../img/alunos/nagisaKurogane.png",
             "perfil": "../../pages/academia/alunos/NK-619843.html"
         },
         {
             "nome": "Sesshomaru",
             "matricula": "482917",
             "senha": "73920461",
-            "foto": "../../img/ceifeiros/seshomaru.jpg",
+            "foto": "../../img/person-placeholder.jpg",
             "perfil": "../../pages/academia/alunos/S-482917.html"
         },
         {
             "nome": "Shiryu Iguro",
             "matricula": "850176",
             "senha": "92745063",
-            "foto": "../../img/ceifeiros/shiryuIguro.jpg",
+            "foto": "../../img/alunos/shiryuIguro.png",
             "perfil": "../../pages/academia/alunos/SI-850176.html"
         }
     ]
