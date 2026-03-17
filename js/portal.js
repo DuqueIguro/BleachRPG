@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
             <img src="../../img/alunos/${aluno.foto}" alt="${aluno.nome}" class="student-photo">
             <h3 class="student-name">${aluno.nome}</h3>
-            <button class="access-button" onclick="verifyAccess('${aluno.matricula}', '${aluno.senha}')">
+            <button class="access-button" onclick="verifyAccess('${aluno.matricula}', '${aluno.senha}', '${aluno.perfil}')">
                 Acessar Dados
             </button>
         `;
@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-function verifyAccess(matricula, senhaCorreta) {
+function verifyAccess(matricula, senhaCorreta, urlPerfil) {
     const inputSenha = prompt("Digite a senha de acesso espiritual:");
 
     if (inputSenha === senhaCorreta) {
-        alert("Acesso concedido! Redirecionando...");
-        // Futuramente: window.location.href = `perfil.html?id=${matricula}`;
+        // Redireciona para a página específica do aluno definida no JSON
+        window.location.href = urlPerfil;
     } else {
-        alert("Reiatsu incompatível. Senha incorreta.");
+        alert("Senha incorreta. O acesso ao Seireitei foi negado.");
     }
 }

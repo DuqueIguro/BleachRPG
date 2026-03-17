@@ -4,6 +4,12 @@ BleachRPG
 ├─ data
 │  ├─ academia_calendar.json
 │  ├─ academia_notices.json
+│  ├─ alunosFichas
+│  │  ├─ duqueIguro.json
+│  │  ├─ kaguraShihoin.json
+│  │  ├─ nagisaKurogane.json
+│  │  ├─ sesshomaru.json
+│  │  └─ shiryuIguro.json
 │  ├─ audio
 │  │  ├─ bleachTema.mp3
 │  │  └─ bleachTema2.mp3
@@ -30,11 +36,6 @@ BleachRPG
 ├─ img
 │  ├─ Academia.png
 │  ├─ alunos
-│  │  ├─ duqueIguro.png
-│  │  ├─ kaguraShihoin.jpg
-│  │  ├─ nagisaKurogane.png
-│  │  ├─ seshomaru.jpg
-│  │  └─ shiryuIguro.jpg
 │  ├─ Bleach.ico
 │  ├─ bleach.png
 │  ├─ Capi1.png
@@ -54,6 +55,12 @@ BleachRPG
 │  │  ├─ divisao-11.png
 │  │  ├─ divisao-12.png
 │  │  └─ divisao-13.png
+│  ├─ ceifeiros
+│  │  ├─ duqueIguro.png
+│  │  ├─ kaguraShihoin.jpg
+│  │  ├─ nagisaKurogane.png
+│  │  ├─ seshomaru.jpg
+│  │  └─ shiryuIguro.jpg
 │  ├─ conversaArvore.png
 │  ├─ conversaArvore2.png
 │  ├─ docentes
@@ -98,10 +105,16 @@ BleachRPG
 │  ├─ gotei.js
 │  ├─ hubAcademia.js
 │  ├─ index.js
-│  └─ materias.js
+│  ├─ materias.js
+│  └─ portal.js
 ├─ pages
 │  ├─ academia
 │  │  ├─ alunos
+│  │  │  ├─ DI-967312.html
+│  │  │  ├─ KS-735204.html
+│  │  │  ├─ NK-619843.html
+│  │  │  ├─ S-482917.html
+│  │  │  └─ SI-850176.html
 │  │  ├─ boletim.html
 │  │  ├─ boletimMedias.html
 │  │  ├─ docentes.html
