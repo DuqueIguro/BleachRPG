@@ -135,7 +135,7 @@ h1 {
     height: 100%;
     /* CORREÇÃO AQUI: Top evita cortar cabeças */
     object-fit: cover;
-    object-position: top; 
+    object-position: top;
     filter: grayscale(100%) contrast(1.1);
     transition: filter 0.4s ease;
 }
@@ -228,6 +228,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    .gotei-container { padding: 0 1rem 4rem 1rem; }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .gotei-container {
+        padding: 0 1rem 4rem 1rem;
+    }
 }

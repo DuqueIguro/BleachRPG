@@ -34,9 +34,26 @@
     box-shadow: 5px 10px 20px rgba(206, 76, 7, 0.3);
 }
 
-.diretor-info h3 { color: #fff; font-size: 2rem; text-shadow: 2px 2px 0px #d65a18; }
-.diretor-cargo { color: #d65a18; font-family: 'Courier New', monospace; font-weight: bold; display: block; margin: 5px 0 15px; }
-.diretor-desc { font-family: 'Courier New', monospace; color: #ccc; line-height: 1.6; text-align: justify; }
+.diretor-info h3 {
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 2px 2px 0px #d65a18;
+}
+
+.diretor-cargo {
+    color: #d65a18;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0 15px;
+}
+
+.diretor-desc {
+    font-family: 'Courier New', monospace;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: justify;
+}
 
 /* --- GRID DE INSTRUTORES --- */
 .instrutores-grid {
@@ -85,29 +102,31 @@
     padding: 20px;
 }
 
-.instrutor-info h3 { 
-    font-size: 1.4rem; 
-    color: #fff; 
-    margin-bottom: 5px; 
+.instrutor-info h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 5px;
 }
 
-.materia-tag { 
-    color: #d65a18; 
-    font-family: 'Courier New', monospace; 
-    font-weight: bold; 
-    font-size: 0.9rem; 
-    margin-bottom: 10px; 
-    display: block; 
+.materia-tag {
+    color: #d65a18;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
 }
 
-.instrutor-bio { 
-    font-family: 'Courier New', monospace; 
-    font-size: 0.85rem; 
-    color: #aaa; 
-    line-height: 1.4; 
+.instrutor-bio {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #aaa;
+    line-height: 1.4;
     text-align: justify;
 }
 
 @media (max-width: 768px) {
-    .diretor-row { grid-template-columns: 1fr; }
+    .diretor-row {
+        grid-template-columns: 1fr;
+    }
 }

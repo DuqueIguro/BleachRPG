@@ -47,15 +47,15 @@ function renderTree() {
     gameData.forEach((item, index) => {
         const wrapper = document.createElement('div');
         wrapper.className = 'node-wrapper';
-        
+
         const btn = document.createElement('div');
         btn.className = 'node-btn';
-        
+
         // Se estiver bloqueado, adiciona uma classe visual ao nó da árvore também
         if (item.status === 'LOCKED') {
             btn.classList.add('node-locked');
         }
-        
+
         btn.innerHTML = `<div class="node-content">${item.symbol}</div>`;
 
         btn.addEventListener('click', () => {
@@ -78,7 +78,7 @@ function updateInfoPanel(data) {
 
     infoMeta.innerText = data.subtitle;
     infoSymbol.innerText = data.symbol;
-    
+
     // 2. Lógica de Descrição (Typewriter)
     infoDesc.innerHTML = '';
     clearTimeout(typewriterTimeout);
@@ -117,7 +117,7 @@ function renderActionButton(data) {
         // CAMINHO LIVRE
         btn.innerText = "ACESSAR DADOS";
         btn.href = "pages/hubs/hubAcademia";
-        btn.classList.remove('btn-locked'); 
+        btn.classList.remove('btn-locked');
     } else {
         // CAMINHO BLOQUEADO
         btn.innerText = "ACESSO NEGADO";

@@ -14,19 +14,27 @@ BleachRPG
 │  ├─ downloads.json
 │  ├─ gotei.json
 │  ├─ materias.json
-│  └─ pdf
-│     ├─ ApostilaDeRevisaoControleDeReiatsu.pdf
-│     ├─ ApostilaDeRevisaoHakuda.pdf
-│     ├─ ApostilaDeRevisaoHoho.pdf
-│     ├─ ApostilaDeRevisaoKido.pdf
-│     ├─ ApostilaDeRevisaoZanjutsu.pdf
-│     ├─ ManualIntrodutorioGuardasCorte.pdf
-│     ├─ ManualPsicologiaEtica.pdf
-│     ├─ ManualPsicologiaEtica02.pdf
-│     └─ TrabalhoGeral.pdf
+│  ├─ pdf
+│  │  ├─ ApostilaDeRevisaoControleDeReiatsu.pdf
+│  │  ├─ ApostilaDeRevisaoHakuda.pdf
+│  │  ├─ ApostilaDeRevisaoHoho.pdf
+│  │  ├─ ApostilaDeRevisaoKido.pdf
+│  │  ├─ ApostilaDeRevisaoZanjutsu.pdf
+│  │  ├─ ManualIntrodutorioGuardasCorte.pdf
+│  │  ├─ ManualPsicologiaEtica.pdf
+│  │  ├─ ManualPsicologiaEtica02.pdf
+│  │  └─ TrabalhoGeral.pdf
+│  ├─ registro_academico.json
+│  └─ temp
 ├─ Hieararquia.md
 ├─ img
 │  ├─ Academia.png
+│  ├─ alunos
+│  │  ├─ duqueIguro.png
+│  │  ├─ kaguraShihoin.jpg
+│  │  ├─ nagisaKurogane.png
+│  │  ├─ seshomaru.jpg
+│  │  └─ shiryuIguro.jpg
 │  ├─ Bleach.ico
 │  ├─ bleach.png
 │  ├─ Capi1.png
@@ -46,12 +54,6 @@ BleachRPG
 │  │  ├─ divisao-11.png
 │  │  ├─ divisao-12.png
 │  │  └─ divisao-13.png
-│  ├─ ceifeiros
-│  │  ├─ duqueIguro.png
-│  │  ├─ kaguraShihoin.jpg
-│  │  ├─ nagisaKurogane.png
-│  │  ├─ seshomaru.jpg
-│  │  └─ shiryuIguro.jpg
 │  ├─ conversaArvore.png
 │  ├─ conversaArvore2.png
 │  ├─ docentes
@@ -65,9 +67,8 @@ BleachRPG
 │  │  ├─ SeikaFumetsu.png
 │  │  ├─ TatsumaShihoin.jpeg
 │  │  └─ YumekoSai.png
-│  ├─ duqueAcademia.png
-│  ├─ Gemini_Generated_Image_vjht39vjht39vjht.png
 │  ├─ gotei.png
+│  ├─ Iguro.png
 │  ├─ kanemoto.jpeg
 │  ├─ lutaTreino.png
 │  └─ materias
@@ -100,21 +101,25 @@ BleachRPG
 │  └─ materias.js
 ├─ pages
 │  ├─ academia
+│  │  ├─ alunos
 │  │  ├─ boletim.html
 │  │  ├─ boletimMedias.html
 │  │  ├─ docentes.html
 │  │  ├─ downloads.html
-│  │  └─ materias.html
+│  │  ├─ materias.html
+│  │  └─ portal.html
 │  ├─ gotei.html
 │  ├─ hubs
 │  │  └─ hubAcademia.html
 │  └─ ReiatsuInsuficiente.html
 └─ styles
+   ├─ alunos.css
    ├─ boletim.css
    ├─ docentes.css
    ├─ downloads.css
    ├─ gotei.css
    ├─ hubAcademia.css
    ├─ index.css
-   └─ materias.css
+   ├─ materias.css
+   └─ portal.css
 ```

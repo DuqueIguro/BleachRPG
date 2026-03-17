@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderDiretoria(diretoria) {
     const container = document.getElementById('diretoria-section');
     let html = `<h2 class="section-title" style="margin-top:20px;"><span class="marker">>></span> Alta Cúpula Administrativa</h2>`;
-    
+
     diretoria.forEach(membro => {
         html += `
             <div class="diretor-row">
@@ -30,7 +30,7 @@ function renderDiretoria(diretoria) {
 function renderInstrutores(instrutores) {
     const grid = document.getElementById('instrutores-grid');
     grid.innerHTML = '';
-    
+
     instrutores.forEach(profe => {
         grid.innerHTML += `
             <article class="instrutor-card">

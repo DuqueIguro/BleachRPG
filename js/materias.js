@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Lógica condicional: Se for Kidō, layout diferente
             let subContent = '';
-            
+
             if (materia.id === 'kido' && materia.caminhos) {
                 const pathsHTML = materia.caminhos.map(caminho => `
                     <div class="kido-item" title="${caminho.desc}">

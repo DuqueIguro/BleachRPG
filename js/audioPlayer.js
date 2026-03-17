@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (audioSrc) {
         // Ajusta o caminho se estiver dentro de subpastas
-        const rootPath = window.location.pathname.includes('/pages/') 
-            ? (window.location.pathname.includes('/academia/') ? '../../' : '../') 
+        const rootPath = window.location.pathname.includes('/pages/')
+            ? (window.location.pathname.includes('/academia/') ? '../../' : '../')
             : '';
 
         const player = new Audio(rootPath + audioSrc);

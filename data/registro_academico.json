@@ -1,0 +1,34 @@
+{
+    "alunos": [
+        {
+            "nome": "Duque Iguro",
+            "matricula": "967312",
+            "senha": "80615294",
+            "foto": "../../img/alunos/DuqueIguro.png"
+        },
+        {
+            "nome": "Kagura Shihoin",
+            "matricula": "735204",
+            "senha": "18496372",
+            "foto": "../../img/alunos/KaguraShihoin.png" 
+        },
+        {
+            "nome": "Nagisa Kurogane",
+            "matricula": "619843",
+            "senha": "56029184",
+            "foto": "../../img/alunos/NagisaKurogane.png"
+        },
+        {
+            "nome": "Sesshomaru",
+            "matricula": "482917",
+            "senha": "73920461",
+            "foto": "../../img/alunos/Sesshomaru.png"
+        },
+        {
+            "nome": "Shiryu Iguro",
+            "matricula": "850176",
+            "senha": "92745063",
+            "foto": "../../img/alunos/ShiryuIguro.png"
+        }
+    ]
+}

@@ -26,7 +26,8 @@
     transition: all 0.3s ease;
 }
 
-.filter-btn.active, .filter-btn:hover {
+.filter-btn.active,
+.filter-btn:hover {
     border-color: #d65a18;
     color: #fff;
     background: #1a0a00;
@@ -47,9 +48,22 @@
     clip-path: polygon(5% 0, 100% 0, 100% 70%, 95% 100%, 0 100%, 0 30%);
 }
 
-.btn-trabalho { background: #fff; color: #000; }
-.btn-revisão { background: #d65a18; color: #fff; border-color: #d65a18; }
-.btn-complementar { background: transparent; color: #fff; border-color: #555; }
+.btn-trabalho {
+    background: #fff;
+    color: #000;
+}
+
+.btn-revisão {
+    background: #d65a18;
+    color: #fff;
+    border-color: #d65a18;
+}
+
+.btn-complementar {
+    background: transparent;
+    color: #fff;
+    border-color: #555;
+}
 
 .download-btn:hover {
     filter: brightness(1.2);

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('gotei-grid');
     const title = document.getElementById('main-title');
-    
+
     // URL do JSON
     const DATA_URL = '../data/gotei.json';
 
@@ -18,19 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderSquads(squads) {
-        container.innerHTML = ''; 
+        container.innerHTML = '';
 
         squads.forEach(squad => {
             const card = document.createElement('div');
             card.className = 'squad-card';
 
             // Verifica se existe Família para adicionar o badge
-            const familyBadge = squad.family 
-                ? `<div class="family-badge">${squad.family}</div>` 
+            const familyBadge = squad.family
+                ? `<div class="family-badge">${squad.family}</div>`
                 : '';
 
             // Lógica para transformar "01" em "1ª" visualmente (opcional, aqui mantive o ID cru + texto)
-            const divNumber = parseInt(squad.id); 
+            const divNumber = parseInt(squad.id);
 
             card.innerHTML = `
                 ${familyBadge}
@@ -68,16 +68,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Efeito Glitch no Título
     const originalText = title.innerText;
     const chars = 'ABCDEF1234567890!@#';
-    
+
     setInterval(() => {
-        if(Math.random() > 0.96) {
+        if (Math.random() > 0.96) {
             let glitch = '';
-            for(let i=0; i < originalText.length; i++) {
+            for (let i = 0; i < originalText.length; i++) {
                 glitch += chars[Math.floor(Math.random() * chars.length)];
             }
             title.innerText = glitch;
             title.style.color = '#d65a18';
-            
+
             setTimeout(() => {
                 title.innerText = originalText;
                 title.style.color = '#fff';

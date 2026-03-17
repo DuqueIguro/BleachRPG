@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadNotices() {
     const container = document.getElementById('notices-container');
-    
+
     try {
         // Busca o JSON na pasta data
         const response = await fetch('../../data/academia_notices.json');
         if (!response.ok) throw new Error("Erro de conexão");
         const data = await response.json();
 
-        container.innerHTML = ''; 
+        container.innerHTML = '';
 
         data.avisos.forEach(aviso => {
             const div = document.createElement('div');
@@ -39,7 +39,7 @@ async function loadNotices() {
 
 async function loadCalendar() {
     const tbody = document.querySelector('#calendar-table tbody');
-    
+
     try {
         const response = await fetch('../../data/academia_calendar.json');
         if (!response.ok) throw new Error("Erro de conexão");
@@ -106,7 +106,7 @@ function initAssistant() {
         let i = 0;
         isTyping = true;
         btnNext.disabled = true; // Evita pular rápido demais
-        
+
         function typing() {
             if (i < text.length) {
                 textElem.innerHTML += text.charAt(i);
@@ -127,7 +127,7 @@ function initAssistant() {
         if (currentStep < tutorialSteps.length) {
             imgElem.src = tutorialSteps[currentStep].img;
             typeText(tutorialSteps[currentStep].text);
-            
+
             // Texto do botão no final
             if (currentStep === tutorialSteps.length - 1) {
                 btnNext.innerText = "Entendido!";

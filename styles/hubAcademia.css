@@ -43,8 +43,8 @@ body {
     margin-bottom: 30px;
     display: flex;
     /* Garante Titulo na Esquerda e Status na Direita */
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .academy-header h1 {
@@ -61,7 +61,7 @@ body {
     padding: 5px 15px;
     background: #111;
     /* Garante que o status não quebre linha de forma feia */
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 /* --- CARDS GERAIS --- */
@@ -88,7 +88,9 @@ body {
     color: #fff;
 }
 
-.marker { color: #d65a18; }
+.marker {
+    color: #d65a18;
+}
 
 /* --- SEÇÃO SOBRE (ATUALIZADO) --- */
 .about-section {
@@ -98,11 +100,14 @@ body {
 /* Nova classe para a imagem */
 .about-img {
     display: block;
-    margin: 0 auto 20px auto; /* Centraliza horizontalmente e dá margem embaixo */
+    margin: 0 auto 20px auto;
+    /* Centraliza horizontalmente e dá margem embaixo */
     max-width: 100%;
-    max-height: 300px; /* Limite de altura para não estourar a tela */
+    max-height: 300px;
+    /* Limite de altura para não estourar a tela */
     border: 2px solid #fff;
-    box-shadow: 0 0 15px rgba(214, 90, 24, 0.3); /* Glow leve laranja */
+    box-shadow: 0 0 15px rgba(214, 90, 24, 0.3);
+    /* Glow leve laranja */
     object-fit: cover;
 }
 
@@ -115,8 +120,16 @@ body {
     text-align: justify;
 }
 
-.about-content strong { color: #fff; text-decoration: underline decoration-color #d65a18; }
-.about-content em { color: #d65a18; font-style: normal; font-weight: bold; }
+.about-content strong {
+    color: #fff;
+    text-decoration: underline decoration-color #d65a18;
+}
+
+.about-content em {
+    color: #d65a18;
+    font-style: normal;
+    font-weight: bold;
+}
 
 .motto {
     font-size: 1.2rem;
@@ -139,8 +152,13 @@ body {
     gap: 30px;
 }
 
-.notices-section { grid-column: 1 / 2; }
-.calendar-section { grid-column: 2 / 3; }
+.notices-section {
+    grid-column: 1 / 2;
+}
+
+.calendar-section {
+    grid-column: 2 / 3;
+}
 
 /* Avisos */
 .terminal-list p {
@@ -152,17 +170,45 @@ body {
     color: #ccc;
     line-height: 1.4;
 }
-.notice-date { color: #d65a18; font-weight: bold; font-size: 0.8rem; }
+
+.notice-date {
+    color: #d65a18;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
 
 /* Tabela */
-.table-container { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-family: 'Courier New', monospace; }
-th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
-th { color: #d65a18; text-transform: uppercase; font-size: 0.9rem; }
-tr:hover { background-color: #111; }
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Courier New', monospace;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    color: #d65a18;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tr:hover {
+    background-color: #111;
+}
 
 /* --- NAVEGAÇÃO (BOTÕES ATUALIZADOS) --- */
-.nav-section { grid-column: 1 / -1; }
+.nav-section {
+    grid-column: 1 / -1;
+}
 
 .nav-buttons {
     display: flex;
@@ -182,8 +228,9 @@ tr:hover { background-color: #111; }
     border: 2px solid #fff;
     flex-grow: 1;
     max-width: 250px;
-    min-height: 60px; /* Altura mínima para ficar bonito */
-    
+    min-height: 60px;
+    /* Altura mínima para ficar bonito */
+
     /* Centralização Vertical e Horizontal do Texto */
     display: flex;
     align-items: center;
@@ -221,7 +268,10 @@ tr:hover { background-color: #111; }
     transition: opacity 0.5s ease;
 }
 
-.assistant-container.hidden { opacity: 0; pointer-events: none; }
+.assistant-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 
 .assistant-avatar img {
     width: 130px;
@@ -241,7 +291,7 @@ tr:hover { background-color: #111; }
     position: relative;
     z-index: 101;
     width: 100%;
-    box-shadow: 10px 10px 0px rgba(0,0,0,0.8);
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.8);
 }
 
 .assistant-box::after {
@@ -250,8 +300,8 @@ tr:hover { background-color: #111; }
     left: -14px;
     bottom: 30px;
     border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent; 
-    border-right: 15px solid #d65a18; 
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #d65a18;
 }
 
 .assistant-name {
@@ -271,7 +321,10 @@ tr:hover { background-color: #111; }
     margin-bottom: 10px;
 }
 
-.assistant-controls { display: flex; justify-content: flex-end; }
+.assistant-controls {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .btn-small {
     background: #000;
@@ -283,7 +336,10 @@ tr:hover { background-color: #111; }
     font-size: 0.8rem;
     font-weight: bold;
 }
-.btn-small:hover { background: #d65a18; }
+
+.btn-small:hover {
+    background: #d65a18;
+}
 
 .btn-close {
     position: absolute;
@@ -306,14 +362,28 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hub-grid { grid-template-columns: 1fr; }
+    .hub-grid {
+        grid-template-columns: 1fr;
+    }
+
     .academy-header {
         flex-direction: column;
         justify-content: center;
         gap: 15px;
         text-align: center;
     }
-    .academy-header h1 { font-size: 2rem; }
-    .assistant-container { width: 95%; right: 2.5%; bottom: 10px; }
-    .assistant-avatar img { width: 100px; }
+
+    .academy-header h1 {
+        font-size: 2rem;
+    }
+
+    .assistant-container {
+        width: 95%;
+        right: 2.5%;
+        bottom: 10px;
+    }
+
+    .assistant-avatar img {
+        width: 100px;
+    }
 }
