@@ -1,8 +1,17 @@
 {
   "avisos": [
     {
-      "data": "Indeferido",
-      "titulo": "Sem novos avisos, por enquanto."
+      "data": "Classe Avançada",
+      "titulo": "Dirigir-se ao Coordenador de Campo Tatsuma Shihoin para receber sua Asauchi."
+    },
+    {
+      "data": "Classe Avançada",
+      "titulo": "Dirigir-se a coordenação para solicitar a autorização para participar da expedição ao Mundo dos Vivos, que ocorrerá no dia 01/05."
+    },
+    {
+      "data": "Classe Regular",
+      "titulo": "Dirigir-se ao almoxarifado para pegar sua Asauchi dentre as disponíveis."
     }
+
   ]
 }
