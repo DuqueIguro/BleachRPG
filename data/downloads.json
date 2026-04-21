@@ -5,7 +5,7 @@
         "materia": "Ética e Psicologia",
         "professor": "Hanae Kurogane",
         "descricao": "Este manual aborda os fundamentos éticos e psicológicos essenciais para a formação de um Ceifeiro de Almas. Explora temas como a moralidade no combate, o impacto psicológico das batalhas e estratégias para manter a saúde mental em situações de alta pressão.",
-        "arquivo": "../../data/pdf/ManualPsicologiaEtica.pdf"
+        "arquivo": "../../data/pdf/parte1/ManualPsicologiaEtica.pdf"
     },
     {
         "titulo": "Manual de Psicologia e Etica para Ceifeiros de Almas 02",
@@ -13,7 +13,7 @@
         "materia": "Ética e Psicologia",
         "professor": "Hanae Kurogane",
         "descricao": "A continuação do manual anterior, este volume aprofunda-se em casos práticos e dilemas éticos enfrentados por Ceifeiros de Almas. Inclui análises de situações reais, exercícios de reflexão e orientações para o desenvolvimento de resiliência mental e ética profissional.",
-        "arquivo": "../../data/pdf/ManualPsicologiaEtica02.pdf"
+        "arquivo": "../../data/pdf/parte1/ManualPsicologiaEtica02.pdf"
     },
     {
         "titulo": "Manual Introdutório Das Guardas da Corte",
@@ -21,7 +21,7 @@
         "materia": "Doutrina & Conduta Militar",
         "professor": "Katsuji Shiraname",
         "descricao": "Este manual serve como uma introdução às doutrinas e condutas militares específicas das Guardas da Corte Real. Ele aborda os princípios de lealdade, disciplina e estratégia que regem as ações dos membros dessa elite, além de fornecer orientações sobre a conduta esperada em missões de proteção e combate.",
-        "arquivo": "../../data/pdf/ManualIntrodutorioGuardasCorte.pdf"
+        "arquivo": "../../data/pdf/parte1/ManualIntrodutorioGuardasCorte.pdf"
     },
     {
         "titulo": "Apostila de Revisão - Hakuda",
@@ -29,7 +29,7 @@
         "materia": "Hakuda",
         "professor": "Monjirou Takahashi",
         "descricao": "Este manual apresenta os fundamentos e técnicas básicas de Hakuda, incluindo posturas, golpes e estratégias de combate corpo a corpo, preparando os alunos para enfrentar adversários sem o uso de armas.",
-        "arquivo": "../../data/pdf/ApostilaDeRevisaoHakuda.pdf"
+        "arquivo": "../../data/pdf/parte1/ApostilaDeRevisaoHakuda.pdf"
     },
     {
         "titulo": "Apostila de Revisão - Kidō",
@@ -37,7 +37,7 @@
         "materia": "Kidō",
         "professor": "Akio Murasame",
         "descricao": "Este manual cobre os fundamentos e técnicas básicas de Kidō, a arte de manipulação espiritual. Ele inclui instruções detalhadas sobre a conjuração de feitiços, a manipulação de reiatsu e estratégias para o uso eficaz de Kidō em combate.",
-        "arquivo": "../../data/pdf/ApostilaDeRevisaoKido.pdf"
+        "arquivo": "../../data/pdf/parte1/ApostilaDeRevisaoKido.pdf"
     },
     {
         "titulo": "Apostila de Revisão - Hohō",
@@ -45,7 +45,7 @@
         "materia": "Hohō",
         "professor": "Yumeko Sai",
         "descricao": "Este manual apresenta os fundamentos e técnicas básicas de Hohō, a arte da movimentação rápida. Ele inclui instruções sobre posturas, e estratégias para melhorar a agilidade e a evasão durante o combate.",
-        "arquivo": "../../data/pdf/ApostilaDeRevisaoHoho.pdf"
+        "arquivo": "../../data/pdf/parte1/ApostilaDeRevisaoHoho.pdf"
     },
     {
         "titulo": "Apostila de Revisão - Zanjutsu",
@@ -53,7 +53,7 @@
         "materia": "Zanjutsu",
         "professor": "Miharu Kagutsuchi",
         "descricao": "Este manual cobre os fundamentos e técnicas básicas de Zanjutsu, a arte da esgrima. Ele inclui instruções detalhadas sobre posturas, golpes e estratégias para aprimorar a precisão e a eficácia no uso da Zanpakutō em combate.",
-        "arquivo": "../../data/pdf/ApostilaDeRevisaoZanjutsu.pdf"
+        "arquivo": "../../data/pdf/parte1/ApostilaDeRevisaoZanjutsu.pdf"
     },
     {
         "titulo": "Apostila de Revisão - Controle de Reiatsu",
@@ -61,7 +61,15 @@
         "materia": "Controle de Reiatsu",
         "professor": "Monja Sokitsu",
         "descricao": "Este manual apresenta os fundamentos e técnicas básicas de Controle de Reiatsu, incluindo a identificação e manipulação do reiatsu individual e coletivo. Ele detalha os métodos para aumentar o poder de reiatsu, controlar a energia espiritual e aplicar técnicas de controle em situações de combate.",
-        "arquivo": "../../data/pdf/ApostilaDeRevisaoControleDeReiatsu.pdf"
+        "arquivo": "../../data/pdf/parte1/ApostilaDeRevisaoControleDeReiatsu.pdf"
+    },
+    {
+        "titulo": "Apostila Complementar - Kidō",
+        "tipo": "complementar",
+        "materia": "Kidō",
+        "professor": "Akio Murasame",
+        "descricao": "Este manual é uma continuação da apostila de revisão de Kidō, aprofundando-se em técnicas avançadas e estratégias para o uso eficaz de Kidō em combate. Ele inclui instruções detalhadas sobre a conjuração de feitiços mais complexos, a manipulação avançada de reiatsu e táticas para maximizar o impacto dos feitiços em diferentes situações de combate.",
+        "arquivo": "../../data/pdf/parte2/ApostilaKido.pdf"
     }
 
 ]

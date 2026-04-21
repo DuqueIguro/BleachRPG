@@ -53,6 +53,24 @@
       "horario": "09:30 - 12:00",
       "materia": "Expedição no mundo dos vivo - Avançada",
       "instrutor": "Tatsuma Shihōin"
+    },
+    {
+      "dia": "15/05",
+      "horario": "08:00 - 09:00",
+      "materia": "Prova Teórica de Encerramento do Ano Letivo - Regular e Avançada",
+      "instrutor": "Capy-Sensei"
+    },
+    {
+      "dia": "15/05",
+      "horario": "09:00 - 10:00",
+      "materia": "Prova Prática (Atrito de Pressões) de Encerramento do Ano Letivo - Regular e Avançada",
+      "instrutor": "Akio Murasame"
+    },
+    {
+      "dia": "15/05",
+      "horario": "10:00 - 11:00",
+      "materia": "Prova Prática Geral de Encerramento do Ano Letivo - Regular e Avançada",
+      "instrutor": "Corpo Docente"
     }
     
   ]
