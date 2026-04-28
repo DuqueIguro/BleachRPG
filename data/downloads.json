@@ -70,6 +70,22 @@
         "professor": "Akio Murasame",
         "descricao": "Este manual é uma continuação da apostila de revisão de Kidō, aprofundando-se em técnicas avançadas e estratégias para o uso eficaz de Kidō em combate. Ele inclui instruções detalhadas sobre a conjuração de feitiços mais complexos, a manipulação avançada de reiatsu e táticas para maximizar o impacto dos feitiços em diferentes situações de combate.",
         "arquivo": "../../data/pdf/parte2/ApostilaKido.pdf"
+    },
+    {
+        "titulo": "Edital Acadêmico Tese de Convergência",
+        "tipo": "trabalho",
+        "materia": "Todas",
+        "professor": "Academia",
+        "descricao": "Este edital apresenta as diretrizes e requisitos para a elaboração da Tese de Convergência, um trabalho acadêmico que integra conhecimentos de todas as disciplinas estudadas na Academia dos Ceifeiros de Almas. Ele detalha os critérios de avaliação, os temas sugeridos e as orientações para a pesquisa e redação da tese, incentivando os alunos a aplicar seus conhecimentos de forma interdisciplinar e inovadora.",
+        "arquivo": "../../data/pdf/parte2/EditalAcademicoTeseDeConvergencia.pdf"
+    },
+    {
+        "titulo": "Manual de Instrução Acadêmica - Tese de Convergência",
+        "tipo": "complementar",
+        "materia": "Todas",
+        "professor": "Academia",
+        "descricao": "Este manual fornece orientações detalhadas para a elaboração da Tese de Convergência, incluindo dicas para a pesquisa, estruturação e redação do trabalho. Ele aborda as melhores práticas para a integração de conhecimentos de diferentes disciplinas, a formulação de argumentos sólidos e a apresentação eficaz dos resultados da pesquisa.",
+        "arquivo": "../../data/pdf/parte2/ManualInstrucaoAcademica.pdf"
     }
 
 ]
