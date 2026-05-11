@@ -92,16 +92,16 @@
     {
       "name": "Duque Iguro",
       "grades": {
-        "Prova": "4",
-        "Trabalho": "4",
+        "Prova": "一",
+        "Trabalho": "1",
         "Recuperação": "N/A",
-        "Zanjutsu": "十",
-        "Hakuda": "十",
-        "Hohō": "十",
-        "Kidō": "十",
-        "Controle de Reiatsu": "十",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "十",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一",
         "Classe": "Avançada"
       }
@@ -109,33 +109,33 @@
     {
       "name": "Kagura Shihoin",
       "grades": {
-        "Prova": "N/A",
-        "Trabalho": "3",
-        "Recuperação": "4",
-        "Zanjutsu": "九",
-        "Hakuda": "九",
-        "Hohō": "九",
-        "Kidō": "九",
-        "Controle de Reiatsu": "八",
+        "Prova": "一",
+        "Trabalho": "一",
+        "Recuperação": "一",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "八",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一",
-        "Classe": "Regular"
+        "Classe": "Explusa"
       }
     },
     {
       "name": "Mizuki Yukihira",
       "grades": {
-        "Prova": "0",
-        "Trabalho": "-1",
+        "Prova": "一",
+        "Trabalho": "一",
         "Recuperação": "一",
-        "Zanjutsu": "二",
-        "Hakuda": "二",
-        "Hohō": "二",
-        "Kidō": "二",
-        "Controle de Reiatsu": "二",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "二",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一",
         "Classe": "Reprovada"
       }
@@ -143,16 +143,16 @@
     {
       "name": "Nagisa Kurogane",
       "grades": {
-        "Prova": "4",
-        "Trabalho": "N/A",
-        "Recuperação": "3",
-        "Zanjutsu": "七p",
-        "Hakuda": "七",
-        "Hohō": "八",
-        "Kidō": "八",
-        "Controle de Reiatsu": "九",
+        "Prova": "一",
+        "Trabalho": "-3",
+        "Recuperação": "一",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "九",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一",
         "Classe": "Regular"
       }
@@ -160,16 +160,16 @@
     {
       "name": "Seshomaru",
       "grades": {
-        "Prova": "4",
-        "Trabalho": "2",
+        "Prova": "一",
+        "Trabalho": "-3",
         "Recuperação": "N/A",
-        "Zanjutsu": "七",
-        "Hakuda": "七",
-        "Hohō": "八",
-        "Kidō": "七",
-        "Controle de Reiatsu": "七",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "六",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一",
         "Classe": "Regular"
       }
@@ -177,16 +177,16 @@
     {
       "name": "Shiryu Iguro",
       "grades": {
-        "Prova": "4",
-        "Trabalho": "4",
+        "Prova": "一",
+        "Trabalho": "0",
         "Recuperação": "N/A",
-        "Zanjutsu": "十",
-        "Hakuda": "九",
-        "Hohō": "九",
-        "Kidō": "十",
-        "Controle de Reiatsu": "九",
+        "Zanjutsu": "一",
+        "Hakuda": "一",
+        "Hohō": "一",
+        "Kidō": "一",
+        "Controle de Reiatsu": "一",
         "História da Sociedade das Almas": "一",
-        "Doutrina & Conduta Militar": "九",
+        "Doutrina & Conduta Militar": "一",
         "Ética e Psicologia": "一",
         "Classe": "Avançada"
       }
