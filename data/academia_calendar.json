@@ -1,12 +1,6 @@
 {
   "aulas": [
     {
-      "dia": "15/05",
-      "horario": "08:00 - 10:30",
-      "materia": "Reposição de Aulas - Regular",
-      "instrutor": "Academia"
-    },
-    {
       "dia": "22/05",
       "horario": "08:00 - 11:00",
       "materia": "Expedição no mundo dos vivo - Avançada",
